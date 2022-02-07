@@ -1,0 +1,674 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BanBif | Empresas Banca por internet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Library/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="~/Library/css/animate.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="~/Library/font-awesome/css/all.min.css" rel="stylesheet">
+
+
+    <link href="~/Library/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Library/css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/Library/css/fonts/fonts.css">
+
+
+
+    <style type="text/css">
+        <!--
+        /* Tooltip */
+        .tooltip {
+            text-align: left !important;
+            margin-left: 15px;
+        }
+
+        .tooltip-inner {
+            text-align: left !important;
+            padding: 15px !important;
+            max-width: 300px !important;
+        }
+
+        .tooltip .tooltip-inner {
+            text-align: justify !important;
+            background-color: #20A3FF !important;
+        }
+
+        .tooltip.top .arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-top .arrow::before {
+            top: 0;
+            border-width: .4rem .4rem 0;
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-bottom .arrow::before {
+            bottom: 0;
+            border-width: 0 .4rem .4rem;
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.top .tooltip-arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .tooltip.right .tooltip-arrow {
+            border-right-color: #20A3FF !important;
+        }
+
+        .tooltip.bottom .tooltip-arrow {
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.left .tooltip-arrow {
+            border-left-color: #20A3FF !important;
+        }
+        -->
+    </style>
+
+</head>
+<body id="page-top" class="landing-page no-skin-config blue-bg">
+
+    <script>
+        function soloNumeros(e) {
+            var key = window.Event ? e.which : e.keyCode
+            return (key >= 48 && key <= 57)
+        }
+        function soloLetrasYNum(e) {
+
+            var key = window.Event ? e.which : e.keyCode
+            return ((key >= 48 && key <= 57) || (key >= 65 && key <= 90) || (key >= 97 && key <= 122))
+        }
+
+        function soloLetras(e) {
+            var key = window.Event ? e.which : e.keyCode
+            //Ñ = 209...241
+            return ((key >= 65 && key <= 90) || (key >= 97 && key <= 122) || key == 32);
+        }
+    </script>
+
+
+
+
+    <section id="testimonials" class=" navy-section testimonials shadow-lg " style="margin-top: 0; background-color:#20A3FF; padding-top:30px; background-image:none; padding-bottom: 0px">
+
+        <div class="container text-dark">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="~/Library/img/logo_banbif_blanco.png" height="35">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 text-white">
+                    <div>
+                        <!--
+                            <img class="hola" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_HOLA.png" style="margin-bottom: 15px;" alt="Hola" height="50">
+                            <br>
+                            -->
+
+                        <h1 class="fadeInUp" style="line-height:1; font-size:30px; margin-top:70px">
+                            <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">Banca</strong>
+                            <br>
+                            <small>
+                                <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">
+                                    por Internet Empresas
+                                </strong>
+                            </small>
+                        </h1>
+                        <div class="m-t-lg m-b-lg ">
+                            <img class="ptos" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_puntos.png" alt="puntos" height="12">
+                        </div>
+                        <div class="d-none d-sm-none d-md-block">
+                            <i class="fa fa-desktop fa-7x"></i>
+                            <i class="fa fa-laptop fa-5x"></i>
+                            <i class="fa fa-mobile-alt fa-3x"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp animated">
+                    <div id="inicio" class="text-white" style="font-family: Balto, Helvetica, Arialf; font-size:24px">
+                        Solicita reposición de tokens y claves
+                    </div>
+                    <div class="widget  white-bg dark-text shadow-sm p-xl  " style="border-radius: 15px">
+
+
+
+                        <div class="row m-t-sm">
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-md">
+                            <div class="col-lg-12">
+                                <h2 class="text-success"><b>Datos de entrega</b></h2>
+                            </div>
+                        </div>
+
+
+                        <form action="javascript:Finalizar()">
+                            <input type="hidden" name="paso3" value="1">
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <h3 style="font-weight:500">Oficinas donde recogerá los tokens y claves</h3>
+                                </div>
+                                <div class="col-lg-4 mt-3">
+                                    <select id="region" name="region" class="form-control form-control-3" required onchange="CambiarRegion(region.value)">
+                                        <option value="1">Lima</option>
+                                        <option value="2">Provincia</option>
+                                    </select>
+                                </div>
+
+
+                                <div id="oficinasLima" class="col-lg-8 mt-3">
+                                    <select id="cboOficina" name="oficinaL" class="form-control form-control-3" onchange="monstrarDireccion(oficinaL.value)"></select>
+                                </div>
+                                <div class="col-lg-12 mt-3">
+                                    <input id="direccion" name="direccion" type="text" class="form-control form-control-3" readonly>
+                                </div>
+
+                                <div class="col-lg-12 m-t-md">
+                                    <h3 style="font-weight:500" class="text-success">Agregar persona de contacto responsable de la configuración</h3>
+                                </div>
+
+                                <div class="col-lg-4 mt-3">
+                                    <input id="dniresponsable" name="dniresponsable" onKeyPress="return soloNumeros(event)" maxlength="8" type="text" class="form-control form-control-3" placeholder="DNI" required="">
+                                </div>
+
+                                <div class="col-lg-8 mt-3">
+
+                                    <input id="responsable" name="responsable" type="text" class="form-control form-control-3" placeholder="Nombres y Apellidos" required="">
+
+                                </div>
+
+                                <div class="col-lg-8 mt-3">
+
+                                    <input id="emailresponsable" name="emailresponsable" type="text" class="form-control form-control-3" placeholder="Email" required="">
+
+                                </div>
+                                <div class="col-lg-4 mt-3">
+                                    <input id="telefonoresponsable" name="telefonoresponsable" onKeyPress="return soloNumeros(event)" maxlength="9" type="text" class="form-control form-control-3" placeholder="Teléfono" required="">
+                                </div>
+
+
+                                <div class="col-lg-12 m-t-md">
+                                    <h3 style="font-weight:500">Persona autorizada a recibir las tokens y claves</h3>
+                                </div>
+
+                                <div class="col-lg-12 m-t-md">
+
+                                    <div class="alert alert-info" style="font-size:12px">
+                                        <i class="fa fa-info-circle text-success"></i>
+                                        Puedes agregar hasta 2 personas, a quienes se les entregará en la oficina seleccionada, los tokens y claves en un empaque cerrado.
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-lg-12 ">
+                                    <div class="row">
+                                        <div class="col-lg-12 m-b-md">
+                                            <div id="listaRep1">
+                                                <div class="row">
+                                                    <div class="col-lg-12 mt-3">
+                                                        <label class="label label-success"><b>Persona autorizada 1</b></label>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <input id="representante_emp1" name="representante_emp1" type="text" class="form-control form-control-3" placeholder="Nombre de persona autorizada" required="" onKeyPress="return soloLetras(event)" style="text-transform:uppercase">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-5 mt-3">
+                                                        <select id="tipos1" name="tipos1" class="form-control form-control-3" required="">
+                                                            <option value="" selected="" disabled="">--- Tipo de documento ---</option>
+                                                            <option value="1">DNI</option>
+                                                            <option value="2">Pasaporte</option>
+                                                            <option value="3">Carnét de extranjería</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-3">
+                                                        <input id="nrodocrep1" name="nrodocrep1" type="text" class="form-control form-control-3" maxlength="12" placeholder="Numero de documento" required="" onKeyPress="return soloLetrasYNum(event)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="listaRep2" style="display: none">
+                                                <div class="row">
+                                                    <div class="col-lg-12 mt-3">
+                                                        <label class="label label-success"><b>Persona autorizada 2</b></label>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <input id="representante_emp2" name="representante_emp2" type="text" class="form-control form-control-3" placeholder="Nombre de persona autorizada" onKeyPress="return soloLetras(event)" style="text-transform:uppercase">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-5 mt-3">
+                                                        <select id="tipos2" name="tipos2" class="form-control form-control-3">
+                                                            <option value="" selected="" disabled="">--- Tipo de documento ---</option>
+                                                            <option value="1">DNI</option>
+                                                            <option value="2">Pasaporte</option>
+                                                            <option value="3">Carnét de extranjería</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-3">
+                                                        <input id="nrodocrep2" name="nrodocrep2" type="text" class="form-control form-control-3" maxlength="12" placeholder="Numero de documento" onKeyPress="return soloLetrasYNum(event)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-lg-12 mt-3">
+                                                    <a id="btnAgregarRep" href="" onclick="AgregarRepresentante_1(); return false" class="btn btn-success btn-outline btn-xs"><i class="fa fa-plus"></i> <b>Agregar</b></a>
+                                                    <a href="" onclick="BorrarRepresentante_1(); return false" class="btn btn-danger btn-outline btn-xs"><i class="fa fa-trash"></i> <b>Eliminar</b></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 m-t-sm">
+                                    <a href="#" onclick="Atras()" class="btn btn-gray btn-xs">
+                                        <i class="fa fa-chevron-left"></i> Atrás
+                                    </a>
+                                    <button id="continuar" type="submit" class="btn btn-success btn-lg float-right">
+                                        Finalizar <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="blue-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line" style="margin-top:25px; border-color: #ffffff"></div>
+                    <div class="m-t-sm">
+                        <p style="color: #ffffff !important"><b>BanBif</b> | Reinventa 2020</p>
+                    </div>
+                    <div class="navy-line" style="margin-top:-3px; margin-bottom:20px; border-color: #ffffff"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Mainly scripts -->
+    <script src="~/Library/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Library/js/popper.min.js"></script>
+    <script src="~/Library/js/bootstrap.js"></script>
+    <script src="~/Library/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Library/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="~/Library/js/inspinia.js"></script>
+    <script src="~/Library/js/plugins/pace/pace.min.js"></script>
+    <script src="~/Library/js/plugins/wow/wow.min.js"></script>
+
+    <!-- Jasny -->
+    <script src="~/Library/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+    <!-- DROPZONE -->
+    <script src="~/Library/js/plugins/dropzone/dropzone.js"></script>
+
+    <!-- iCheck -->
+    <script src="~/Library/js/plugins/iCheck/icheck.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            sessionStorage.setItem("PAGTOKEN", "1");
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 80
+            });
+
+            CambiarRegion("1");
+
+
+            /*REPRESENTANTES*/
+            var objRequest = {};
+            objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+
+            $.ajax({
+                url: sessionStorage.APP + "/DatosEntrega/ObtenerDatoEntrega",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    
+                    if (resp.result) {
+                        if (resp.data.codigooficina > 0) {
+                            var region = resp.data.region == "L" ? 1 : 2;
+
+                            if (region == 2) {
+                                $('#region').val(region);
+                                CambiarRegion(region);
+                            }
+                            
+                            $('#cboOficina').val(resp.data.codigooficina);
+                            monstrarDireccion(resp.data.codigooficina);
+                        }
+
+                        if (resp.data.dniadministrador != null) {
+                            $('#dniresponsable').val(resp.data.dniadministrador);
+                        }
+
+                        if (resp.data.emailadministrador != null) {
+                            $('#emailresponsable').val(resp.data.emailadministrador);
+                        }
+
+                        if (resp.data.nombreadministrador != null) {
+                            $('#responsable').val(resp.data.nombreadministrador);
+                        }
+
+                        if (resp.data.telefonoadministrador != null) {
+                            $('#telefonoresponsable').val(resp.data.telefonoadministrador);
+                        }
+
+                        if (resp.data.autorizados.length > 0) {
+                            var cont =1 ;
+                            $.each(resp.data.autorizados, function (index, item) {
+                                if (cont == 2) {
+                                    AgregarRepresentante_1();
+                                }
+
+                                $('#representante_emp' + cont).val(item.nombre);
+
+                                if (item.tipodocumento > 0) {
+                                    $('#tipos' + cont).val(item.tipodocumento);
+                                }
+
+                                $('#nrodocrep' + cont).val(item.documento);
+                                
+                                cont += 1;
+                            });
+                            
+                        }
+                    }
+                }
+            });
+
+
+            function SmoothScrollTo(id_or_Name, timelength) {
+                var timelength = timelength || 1000;
+                $('html, body').animate({
+                    scrollTop: $(id_or_Name).offset().top
+                }, timelength, function () {
+                    window.location.hash = id_or_Name;
+                });
+            }
+
+            if (screen.width <= 500) {
+                SmoothScrollTo("#inicio", 1000);
+            }
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            });
+
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function (event) {
+                var link = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(link.attr('href')).offset().top - 50
+                }, 500);
+                event.preventDefault();
+                $("#navbar").collapse('hide');
+            });
+        });
+
+        var cbpAnimatedHeader = (function () {
+            var docElem = document.documentElement,
+                    header = document.querySelector('.navbar-default'),
+                    didScroll = false,
+                    changeHeaderOn = 200;
+            function init() {
+                window.addEventListener('scroll', function (event) {
+                    if (!didScroll) {
+                        didScroll = true;
+                        setTimeout(scrollPage, 250);
+                    }
+                }, false);
+            }
+            function scrollPage() {
+                var sy = scrollY();
+                if (sy >= changeHeaderOn) {
+                    $(header).addClass('navbar-scroll')
+                }
+                else {
+                    $(header).removeClass('navbar-scroll')
+                }
+                didScroll = false;
+            }
+            function scrollY() {
+                return window.pageYOffset || docElem.scrollTop;
+            }
+            init();
+
+        })();
+
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+
+    </script>
+
+
+    <script>
+        var countRepresentante = 1;
+        var listaOficinas;
+        function AgregarRepresentante_1() {
+            if (countRepresentante < 2) {
+                countRepresentante += 1;
+                $('#listaRep' + countRepresentante).show();
+                document.getElementById('tipos' + countRepresentante).required = true;
+                document.getElementById('nrodocrep' + countRepresentante).required = true;
+                document.getElementById('representante_emp' + countRepresentante).required = true;
+            }
+
+            if (countRepresentante == 2) {
+                $('#btnAgregarRep').hide();
+            } else {
+                $('#btnAgregarRep').show();
+            }
+        }
+
+        function BorrarRepresentante_1() {
+            if (countRepresentante > 1) {
+                $('#listaRep' + countRepresentante).hide();
+                document.getElementById('representante_emp' + countRepresentante).required = false;
+                document.getElementById('tipos' + countRepresentante).required = false;
+                document.getElementById('nrodocrep' + countRepresentante).required = false;
+                document.getElementById('representante_emp' + countRepresentante).value = '';
+                document.getElementById('tipos' + countRepresentante).value = '';
+                document.getElementById('nrodocrep' + countRepresentante).value = '';
+                countRepresentante -= 1;
+            }
+
+            if (countRepresentante == 2) {
+                $('#btnAgregarRep').hide();
+            } else {
+                $('#btnAgregarRep').show();
+            }
+        }
+
+        function CambiarRegion(region) {
+
+            var objRequest = {};
+            objRequest.region = region == "1" ? "L" : "P";
+            $("#cboOficina").empty();
+            $('#direccion').val("");
+            $.ajax({
+                url: sessionStorage.APP + "/DatosEntrega/ListarOficinas",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    //console.log(resp);
+                    if (resp.result) {
+                        listaOficinas = resp.data;
+                        var html = '<option value=""> -- Seleccionar oficina -- </option>';
+                        $.each(resp.data, function (index, item) {
+
+                            html += '<option value="' + item.codoficina + '">';
+                            if (region == "1") {
+                                html += item.distrito + '- Oficina ' + item.oficina;
+                            } else {
+                                html += item.departamento + '- Oficina ' + item.oficina;
+                            }
+                            html += '</option>';
+
+                        });
+                        $('#cboOficina').append(html);
+                    }
+                }
+            });
+            //<option value=""> -- Seleccionar oficina -- </option>
+        }
+
+        function monstrarDireccion(oficina) {
+
+            $.each(listaOficinas, function (index, item) {
+                if (item.codoficina == oficina) {
+                    $('#direccion').val(item.direccion);
+                }
+            });
+        }
+
+        function Finalizar() {
+            $('#continuar').prop('disabled', 'true');
+            var objRequest = {};
+            objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+            objRequest.codigooficina = $("#cboOficina").val();
+            objRequest.dniadministrador = $('#dniresponsable').val();
+            objRequest.nombreadministrador = $('#responsable').val();
+            objRequest.emailadministrador = $('#emailresponsable').val();
+            objRequest.telefonoadministrador = $('#telefonoresponsable').val();
+
+
+            var autorizados = [];
+            for (i = 1; i <= countRepresentante; i++) {
+                var autorizado = {};
+                autorizado.nombre = $('#representante_emp' + i).val();
+                autorizado.tipodocumento = $('#tipos' + i).val();
+                autorizado.documento = $('#nrodocrep' + i).val();
+
+                autorizados.push(autorizado);
+            }
+            objRequest.autorizados = autorizados;
+            $.ajax({
+                url: sessionStorage.APP + "/DatosEntrega/ActualizarEntrega",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    if (resp.result) {
+                        window.location.href = sessionStorage.APP + "/Gracias";
+                    } else {
+                        $('#continuar').prop('disabled', 'false');
+                    }
+
+                }
+            });
+        }
+
+        function Atras() {
+            
+            var objRequest = {};
+            objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+            objRequest.codigooficina = $("#cboOficina").val();
+            objRequest.dniadministrador = $('#dniresponsable').val();
+            objRequest.nombreadministrador = $('#responsable').val();
+            objRequest.emailadministrador = $('#emailresponsable').val();
+            objRequest.telefonoadministrador = $('#telefonoresponsable').val();
+
+
+            var autorizados = [];
+            for (i = 1; i <= countRepresentante; i++) {
+                var autorizado = {};
+                autorizado.nombre = $('#representante_emp' + i).val();
+                autorizado.tipodocumento = $('#tipos' + i).val();
+                autorizado.documento = $('#nrodocrep' + i).val();
+
+                autorizados.push(autorizado);
+            }
+            objRequest.autorizados = autorizados;
+            $.ajax({
+                url: sessionStorage.APP + "/DatosEntrega/ActualizarEntregaNoCorreo",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    if (resp.result) {
+                       window.location.href = sessionStorage.APP + "/Token";
+                    }
+                }
+            });
+            
+        }
+    </script>
+
+</body>
+</html>

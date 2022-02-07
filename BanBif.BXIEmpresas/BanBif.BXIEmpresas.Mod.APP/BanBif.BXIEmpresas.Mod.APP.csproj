@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{797299E9-D40E-448D-B801-4E9220635D85}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BanBif.BXIEmpresas.Mod.APP</RootNamespace>
+    <AssemblyName>BanBif.BXIEmpresas.Mod.APP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Library\css\animate.css" />
+    <Content Include="Library\css\bootstrap.min.css" />
+    <Content Include="Library\css\fonts\fonts.css" />
+    <Content Include="Library\css\fonts\Linearicons-Free.svg" />
+    <Content Include="Library\css\plugins\awesome-bootstrap-checkbox\awesome-bootstrap-checkbox.css" />
+    <Content Include="Library\css\plugins\dropzone\basic.css" />
+    <Content Include="Library\css\plugins\dropzone\dropzone.css" />
+    <Content Include="Library\css\plugins\jasny\jasny-bootstrap.min.css" />
+    <Content Include="Library\css\style.css" />
+    <Content Include="Library\font-awesome\css\all.min.css" />
+    <Content Include="Library\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Library\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Library\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Library\img\logo_banbif_blanco.png" />
+    <Content Include="Library\js\bootstrap.js" />
+    <Content Include="Library\js\bootstrap.min.js" />
+    <Content Include="Library\js\inspinia.js" />
+    <Content Include="Library\js\jquery-2.1.1.js" />
+    <Content Include="Library\js\jquery-3.1.1.min.js" />
+    <Content Include="Library\js\plugins\blueimp\jquery.blueimp-gallery.min.js" />
+    <Content Include="Library\js\plugins\bootstrap-markdown\bootstrap-markdown.js" />
+    <Content Include="Library\js\plugins\bootstrap-markdown\markdown.js" />
+    <Content Include="Library\js\plugins\bootstrap-tagsinput\bootstrap-tagsinput.js" />
+    <Content Include="Library\js\plugins\bootstrapTour\bootstrap-tour.min.js" />
+    <Content Include="Library\js\plugins\c3\c3.min.js" />
+    <Content Include="Library\js\plugins\chartist\chartist.min.js" />
+    <Content Include="Library\js\plugins\chartJs\Chart.min.js" />
+    <Content Include="Library\js\plugins\chosen\chosen.jquery.js" />
+    <Content Include="Library\js\plugins\clipboard\clipboard.min.js" />
+    <Content Include="Library\js\plugins\clockpicker\clockpicker.js" />
+    <Content Include="Library\js\plugins\codemirror\codemirror.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\apl\apl.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\apl\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\asterisk\asterisk.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\asterisk\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\clike\clike.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\clike\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\clike\scala.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\clojure\clojure.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\clojure\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\cobol\cobol.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\cobol\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\coffeescript\coffeescript.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\coffeescript\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\commonlisp\commonlisp.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\commonlisp\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\css\css.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\css\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\css\less.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\css\less_test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\css\scss.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\css\scss_test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\css\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\cypher\cypher.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\cypher\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\diff\diff.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\diff\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\django\django.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\django\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\dtd\dtd.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\dtd\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\dylan\dylan.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\dylan\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\d\d.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\d\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\ecl\ecl.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\ecl\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\eiffel\eiffel.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\eiffel\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\erlang\erlang.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\erlang\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\fortran\fortran.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\fortran\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\gas\gas.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\gas\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\gfm\gfm.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\gfm\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\gfm\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\gherkin\gherkin.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\gherkin\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\go\go.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\go\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\groovy\groovy.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\groovy\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\haml\haml.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\haml\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\haml\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\haskell\haskell.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\haskell\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\haxe\haxe.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\haxe\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\htmlembedded\htmlembedded.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\htmlembedded\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\htmlmixed\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\http\http.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\http\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\jade\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\jade\jade.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\javascript\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\javascript\json-ld.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\javascript\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\javascript\typescript.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\jinja2\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\jinja2\jinja2.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\julia\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\julia\julia.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\kotlin\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\kotlin\kotlin.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\livescript\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\livescript\livescript.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\lua\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\lua\lua.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\markdown\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\markdown\markdown.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\markdown\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\meta.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\mirc\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\mirc\mirc.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\mllike\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\mllike\mllike.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\modelica\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\modelica\modelica.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\nginx\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\nginx\nginx.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\ntriples\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\ntriples\ntriples.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\octave\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\octave\octave.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\pascal\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\pascal\pascal.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\pegjs\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\pegjs\pegjs.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\perl\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\perl\perl.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\php\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\php\php.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\php\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\pig\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\pig\pig.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\properties\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\properties\properties.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\puppet\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\puppet\puppet.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\python\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\python\python.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\q\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\q\q.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\rpm\changes\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\rpm\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\rpm\rpm.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\rst\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\rst\rst.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\ruby\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\ruby\ruby.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\ruby\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\rust\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\rust\rust.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\r\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\r\r.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\sass\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\sass\sass.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\scheme\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\scheme\scheme.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\shell\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\shell\shell.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\shell\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\sieve\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\sieve\sieve.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\slim\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\slim\slim.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\slim\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\smalltalk\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\smalltalk\smalltalk.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\smartymixed\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\smartymixed\smartymixed.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\smarty\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\smarty\smarty.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\solr\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\solr\solr.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\sparql\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\sparql\sparql.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\sql\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\sql\sql.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\stex\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\stex\stex.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\stex\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\tcl\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\tcl\tcl.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\textile\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\textile\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\textile\textile.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\tiddlywiki\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\tiddlywiki\tiddlywiki.css" />
+    <Content Include="Library\js\plugins\codemirror\mode\tiddlywiki\tiddlywiki.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\tiki\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\tiki\tiki.css" />
+    <Content Include="Library\js\plugins\codemirror\mode\tiki\tiki.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\toml\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\toml\toml.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\tornado\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\tornado\tornado.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\turtle\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\turtle\turtle.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\vbscript\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\vbscript\vbscript.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\vb\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\vb\vb.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\velocity\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\velocity\velocity.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\verilog\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\verilog\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\verilog\verilog.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\xml\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\xml\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\xml\xml.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\xquery\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\xquery\test.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\xquery\xquery.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\yaml\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\yaml\yaml.js" />
+    <Content Include="Library\js\plugins\codemirror\mode\z80\index.html" />
+    <Content Include="Library\js\plugins\codemirror\mode\z80\z80.js" />
+    <Content Include="Library\js\plugins\colorpicker\bootstrap-colorpicker.min.js" />
+    <Content Include="Library\js\plugins\cropper\cropper.min.js" />
+    <Content Include="Library\js\plugins\d3\d3.min.js" />
+    <Content Include="Library\js\plugins\datamaps\datamaps.all.min.js" />
+    <Content Include="Library\js\plugins\datapicker\bootstrap-datepicker.js" />
+    <Content Include="Library\js\plugins\dataTables\dataTables.bootstrap4.min.js" />
+    <Content Include="Library\js\plugins\dataTables\datatables.min.js" />
+    <Content Include="Library\js\plugins\daterangepicker\daterangepicker.js" />
+    <Content Include="Library\js\plugins\diff_match_patch\javascript\diff_match_patch.js" />
+    <Content Include="Library\js\plugins\diff_match_patch\README.txt" />
+    <Content Include="Library\js\plugins\dotdotdot\jquery.dotdotdot.min.js" />
+    <Content Include="Library\js\plugins\dropzone\dropzone.js" />
+    <Content Include="Library\js\plugins\dualListbox\jquery.bootstrap-duallistbox.js" />
+    <Content Include="Library\js\plugins\easypiechart\easypiechart.js" />
+    <Content Include="Library\js\plugins\easypiechart\jquery.easypiechart.js" />
+    <Content Include="Library\js\plugins\flot\curvedLines.js" />
+    <Content Include="Library\js\plugins\flot\excanvas.min.js" />
+    <Content Include="Library\js\plugins\flot\jquery.flot.js" />
+    <Content Include="Library\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Library\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Library\js\plugins\flot\jquery.flot.spline.js" />
+    <Content Include="Library\js\plugins\flot\jquery.flot.symbol.js" />
+    <Content Include="Library\js\plugins\flot\jquery.flot.time.js" />
+    <Content Include="Library\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Library\js\plugins\footable\footable.all.min.js" />
+    <Content Include="Library\js\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Library\js\plugins\fullcalendar\moment.min.js" />
+    <Content Include="Library\js\plugins\gritter\images\gritter-light.png" />
+    <Content Include="Library\js\plugins\gritter\images\gritter-long.png" />
+    <Content Include="Library\js\plugins\gritter\images\gritter.png" />
+    <Content Include="Library\js\plugins\gritter\images\ie-spacer.gif" />
+    <Content Include="Library\js\plugins\gritter\jquery.gritter.css" />
+    <Content Include="Library\js\plugins\gritter\jquery.gritter.min.js" />
+    <Content Include="Library\js\plugins\i18next\i18next.min.js" />
+    <Content Include="Library\js\plugins\iCheck\icheck.min.js" />
+    <Content Include="Library\js\plugins\idle-timer\idle-timer.min.js" />
+    <Content Include="Library\js\plugins\ionRangeSlider\ion.rangeSlider.min.js" />
+    <Content Include="Library\js\plugins\jasny\jasny-bootstrap.min.js" />
+    <Content Include="Library\js\plugins\jeditable\jquery.jeditable.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-ar.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-bg.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-bg1251.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-cat.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-cn.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-cs.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-da.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-de.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-dk.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-el.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-es.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-fa.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-fi.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-fr.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-gl.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-he.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-hr.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-hr1250.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-hu.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-id.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-is.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-it.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-ja.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-kr.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-lt.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-mne.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-nl.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-no.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-pl.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-pt-br.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-pt.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-ro.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-ru.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-sk.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-sr.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-sv.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-th.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-tr.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-tw.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-ua.js" />
+    <Content Include="Library\js\plugins\jqGrid\i18n\grid.locale-vi.js" />
+    <Content Include="Library\js\plugins\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Library\js\plugins\jquery-ui\images\ui-icons_444444_256x240.png" />
+    <Content Include="Library\js\plugins\jquery-ui\images\ui-icons_555555_256x240.png" />
+    <Content Include="Library\js\plugins\jquery-ui\images\ui-icons_777620_256x240.png" />
+    <Content Include="Library\js\plugins\jquery-ui\images\ui-icons_777777_256x240.png" />
+    <Content Include="Library\js\plugins\jquery-ui\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Library\js\plugins\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Library\js\plugins\jquery-ui\jquery-ui.min.css" />
+    <Content Include="Library\js\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Library\js\plugins\jquery-ui\LICENSE.txt" />
+    <Content Include="Library\js\plugins\jsKnob\jquery.knob.js" />
+    <Content Include="Library\js\plugins\jsTree\jstree.min.js" />
+    <Content Include="Library\js\plugins\justified-gallery\jquery.justifiedgallery.css" />
+    <Content Include="Library\js\plugins\justified-gallery\jquery.justifiedgallery.js" />
+    <Content Include="Library\js\plugins\justified-gallery\jquery.justifiedgallery.min.css" />
+    <Content Include="Library\js\plugins\justified-gallery\jquery.justifiedgallery.min.js" />
+    <Content Include="Library\js\plugins\justified-gallery\loading.gif" />
+    <Content Include="Library\js\plugins\jvectormap\jquery-jvectormap-2.0.2.css" />
+    <Content Include="Library\js\plugins\jvectormap\jquery-jvectormap-2.0.2.min.js" />
+    <Content Include="Library\js\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Library\js\plugins\ladda\ladda.jquery.min.js" />
+    <Content Include="Library\js\plugins\ladda\ladda.min.js" />
+    <Content Include="Library\js\plugins\ladda\spin.min.js" />
+    <Content Include="Library\js\plugins\masonary\masonry.pkgd.min.js" />
+    <Content Include="Library\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Library\js\plugins\morris\morris.js" />
+    <Content Include="Library\js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="Library\js\plugins\nestable\jquery.nestable.js" />
+    <Content Include="Library\js\plugins\nouslider\jquery.nouislider.min.js" />
+    <Content Include="Library\js\plugins\pace\pace.min.js" />
+    <Content Include="Library\js\plugins\pdfjs\pdf.js" />
+    <Content Include="Library\js\plugins\pdfjs\pdf.worker.js" />
+    <Content Include="Library\js\plugins\peity\jquery.peity.min.js" />
+    <Content Include="Library\js\plugins\preetyTextDiff\jquery.pretty-text-diff.min.js" />
+    <Content Include="Library\js\plugins\pwstrength\pwstrength-bootstrap.min.js" />
+    <Content Include="Library\js\plugins\pwstrength\zxcvbn.js" />
+    <Content Include="Library\js\plugins\rickshaw\rickshaw.min.js" />
+    <Content Include="Library\js\plugins\rickshaw\vendor\d3.v3.js" />
+    <Content Include="Library\js\plugins\select2\select2.full.min.js" />
+    <Content Include="Library\js\plugins\slick\slick.min.js" />
+    <Content Include="Library\js\plugins\slimscroll\jquery.slimscroll.js" />
+    <Content Include="Library\js\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Library\js\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="Library\js\plugins\steps\jquery.steps.min.js" />
+    <Content Include="Library\js\plugins\summernote\summernote-bs4.js" />
+    <Content Include="Library\js\plugins\sweetalert\sweetalert.min.js" />
+    <Content Include="Library\js\plugins\switchery\switchery.js" />
+    <Content Include="Library\js\plugins\tinycon\tinycon.min.js" />
+    <Content Include="Library\js\plugins\toastr\toastr.min.js" />
+    <Content Include="Library\js\plugins\topojson\topojson.js" />
+    <Content Include="Library\js\plugins\touchpunch\jquery.ui.touch-punch.min.js" />
+    <Content Include="Library\js\plugins\touchspin\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="Library\js\plugins\typehead\bootstrap3-typeahead.min.js" />
+    <Content Include="Library\js\plugins\validate\jquery.validate.min.js" />
+    <Content Include="Library\js\plugins\video\responsible-video.js" />
+    <Content Include="Library\js\plugins\wow\wow.min.js" />
+    <Content Include="Library\js\popper.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Library\css\fonts\balto\balto-book.otf" />
+    <Content Include="Library\css\fonts\balto\baltomobile-book.ttf" />
+    <Content Include="Library\css\fonts\balto\baltoweb-book.eot" />
+    <Content Include="Library\css\fonts\balto\baltoweb-book.woff" />
+    <Content Include="Library\css\fonts\Linearicons-Free.eot" />
+    <Content Include="Library\css\fonts\Linearicons-Free.ttf" />
+    <Content Include="Library\css\fonts\Linearicons-Free.woff" />
+    <Content Include="Library\css\fonts\produkt\Produkt-Medium-Web.eot" />
+    <Content Include="Library\css\fonts\produkt\Produkt-Medium-Web.woff" />
+    <Content Include="Library\css\fonts\produkt\Produkt-Regular-Web.eot" />
+    <Content Include="Library\css\fonts\produkt\Produkt-Regular-Web.woff" />
+    <Content Include="Library\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Library\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Library\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Library\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Library\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Library\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Library\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Library\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Library\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Library\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Library\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Library\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Library\js\bootstrap.js.map" />
+    <Content Include="Library\js\bootstrap.min.js.map" />
+    <Content Include="Library\js\plugins\chartist\chartist.min.js.map" />
+    <Content Include="Library\js\plugins\d3\LICENSE" />
+    <Content Include="Library\js\plugins\diff_match_patch\COPYING" />
+    <Content Include="Library\js\plugins\justified-gallery\README.md" />
+    <Content Include="Library\js\plugins\pdfjs\pdf.js.map" />
+    <Content Include="Library\js\plugins\pdfjs\pdf.worker.js.map" />
+    <Content Include="Library\js\plugins\topojson\LICENSE" />
+    <None Include="Properties\PublishProfiles\BxiEmpresasModAPP.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Token\Index.cshtml" />
+    <Content Include="Views\DatosEntrega\Index.cshtml" />
+    <Content Include="Views\Gracias\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DatosEntregaController.cs" />
+    <Compile Include="Controllers\GraciasController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResumenController.cs" />
+    <Compile Include="Controllers\TokenController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Resumen\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BanBif.BXIEmpresas.BE\BanBif.BXIEmpresas.BE.csproj">
+      <Project>{467d9f93-65f9-4c31-9fb9-2ee7130dcb46}</Project>
+      <Name>BanBif.BXIEmpresas.BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50007</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50007/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

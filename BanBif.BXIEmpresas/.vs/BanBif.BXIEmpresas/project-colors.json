@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "797299e9-d40e-448d-b801-4e9220635d85": {
+      "ProjectGuid": "797299e9-d40e-448d-b801-4e9220635d85",
+      "DisplayName": "BanBif.BXIEmpresas.Mod.APP",
+      "ColorIndex": 0
+    },
+    "15acaa07-5446-4e8f-8df4-4b49b6794589": {
+      "ProjectGuid": "15acaa07-5446-4e8f-8df4-4b49b6794589",
+      "DisplayName": "BanBif.BXIEmpresas.APP",
+      "ColorIndex": 1
+    },
+    "b7847415-aec6-4398-8d32-ff8d659137ec": {
+      "ProjectGuid": "b7847415-aec6-4398-8d32-ff8d659137ec",
+      "DisplayName": "BanBif.BXIEmpresas.API",
+      "ColorIndex": 2
+    },
+    "910bded9-6dba-48ac-94dc-a0e8528b8527": {
+      "ProjectGuid": "910bded9-6dba-48ac-94dc-a0e8528b8527",
+      "DisplayName": "BanBif.BXIEmpresas.DA",
+      "ColorIndex": 3
+    },
+    "467d9f93-65f9-4c31-9fb9-2ee7130dcb46": {
+      "ProjectGuid": "467d9f93-65f9-4c31-9fb9-2ee7130dcb46",
+      "DisplayName": "BanBif.BXIEmpresas.BE",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

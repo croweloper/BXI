@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="panelModelStoreContainer" CdmEntityContainer="panelEntities">
+    <EntitySetMapping Name="BPI_EMPRESAS_representante">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_representante">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_representante">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+          <ScalarProperty Name="idrepresentante" ColumnName="idrepresentante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_dato">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_dato">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_dato">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="decimal1" ColumnName="decimal1" />
+          <ScalarProperty Name="valor1" ColumnName="valor1" />
+          <ScalarProperty Name="texto1" ColumnName="texto1" />
+          <ScalarProperty Name="dato" ColumnName="dato" />
+          <ScalarProperty Name="iddato" ColumnName="iddato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_token">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_token">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_token">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+          <ScalarProperty Name="idtoken" ColumnName="idtoken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_BPI_EMPRESAS_OFICINAS" FunctionName="panelModel.Store.SP_BPI_EMPRESAS_OFICINAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="panelModel.SP_BPI_EMPRESAS_OFICINAS_Result">
+          <ScalarProperty Name="idoficina" ColumnName="idoficina" />
+          <ScalarProperty Name="codoficina" ColumnName="codoficina" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="zona" ColumnName="zona" />
+          <ScalarProperty Name="horario1" ColumnName="horario1" />
+          <ScalarProperty Name="horario2" ColumnName="horario2" />
+          <ScalarProperty Name="horario3" ColumnName="horario3" />
+          <ScalarProperty Name="horario4" ColumnName="horario4" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="ubidepa" ColumnName="ubidepa" />
+          <ScalarProperty Name="ubiprov" ColumnName="ubiprov" />
+          <ScalarProperty Name="ubidist" ColumnName="ubidist" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_autorizados">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_autorizados">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_autorizados">
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+          <ScalarProperty Name="idautorizado" ColumnName="idautorizado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_MOD_representante">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_representante">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_representante">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+          <ScalarProperty Name="idrepresentante" ColumnName="idrepresentante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_MOD_autorizados">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_autorizados">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_autorizados">
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+          <ScalarProperty Name="idautorizado" ColumnName="idautorizado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_MOD_token">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_token">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_token">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="token_usuario" ColumnName="token_usuario" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+          <ScalarProperty Name="idtoken" ColumnName="idtoken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_registro">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_registro">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_registro">
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="telefono_administrador" ColumnName="telefono_administrador" />
+          <ScalarProperty Name="email_administrador" ColumnName="email_administrador" />
+          <ScalarProperty Name="nombre_administrador" ColumnName="nombre_administrador" />
+          <ScalarProperty Name="dni_administrador" ColumnName="dni_administrador" />
+          <ScalarProperty Name="usuario_administrador" ColumnName="usuario_administrador" />
+          <ScalarProperty Name="token_digital" ColumnName="token_digital" />
+          <ScalarProperty Name="token_fisico" ColumnName="token_fisico" />
+          <ScalarProperty Name="codoficina" ColumnName="codoficina" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="firmantes" ColumnName="firmantes" />
+          <ScalarProperty Name="entidad" ColumnName="entidad" />
+          <ScalarProperty Name="cuenta_cargo" ColumnName="cuenta_cargo" />
+          <ScalarProperty Name="moneda_cargo" ColumnName="moneda_cargo" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+          <ScalarProperty Name="ruc" ColumnName="ruc" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BPI_EMPRESAS_MOD_registro">
+      <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_registro">
+        <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_registro">
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="telefono_administrador" ColumnName="telefono_administrador" />
+          <ScalarProperty Name="email_administrador" ColumnName="email_administrador" />
+          <ScalarProperty Name="nombre_administrador" ColumnName="nombre_administrador" />
+          <ScalarProperty Name="dni_administrador" ColumnName="dni_administrador" />
+          <ScalarProperty Name="usuario_administrador" ColumnName="usuario_administrador" />
+          <ScalarProperty Name="token_digital" ColumnName="token_digital" />
+          <ScalarProperty Name="token_fisico" ColumnName="token_fisico" />
+          <ScalarProperty Name="codoficina" ColumnName="codoficina" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+          <ScalarProperty Name="firmantes" ColumnName="firmantes" />
+          <ScalarProperty Name="entidad" ColumnName="entidad" />
+          <ScalarProperty Name="cuenta_cargo" ColumnName="cuenta_cargo" />
+          <ScalarProperty Name="moneda_cargo" ColumnName="moneda_cargo" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+          <ScalarProperty Name="ruc" ColumnName="ruc" />
+          <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="canalesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'canales.dbo.FAEL_PROVEEDORES' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="FAEL_PROVEEDORES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CODPROVEEDOR" Type="bigint" />
+    <Property Name="RUC" Type="varchar" MaxLength="20" />
+    <Property Name="PROVEEDOR" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="canalesModelStoreContainer">
+    <EntitySet Name="FAEL_PROVEEDORES" EntityType="Self.FAEL_PROVEEDORES" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FAEL_PROVEEDORES].[ID] AS [ID], 
+    [FAEL_PROVEEDORES].[CODPROVEEDOR] AS [CODPROVEEDOR], 
+    [FAEL_PROVEEDORES].[RUC] AS [RUC], 
+    [FAEL_PROVEEDORES].[PROVEEDOR] AS [PROVEEDOR]
+    FROM [dbo].[FAEL_PROVEEDORES] AS [FAEL_PROVEEDORES]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

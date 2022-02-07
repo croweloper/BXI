@@ -1,0 +1,825 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BanBif | Banca por internet Empresas </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Library/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="~/Library/css/animate.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="~/Library/font-awesome/css/all.min.css" rel="stylesheet">
+
+
+    <link href="~/Library/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Library/css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/Library/css/fonts/fonts.css">
+
+
+    <style type="text/css">
+        <!--
+        /* Tooltip */
+        .tooltip {
+            text-align: left !important;
+            margin-left: 15px;
+        }
+
+        .tooltip-inner {
+            text-align: left !important;
+            padding: 15px !important;
+            max-width: 300px !important;
+        }
+
+        .tooltip .tooltip-inner {
+            text-align: justify !important;
+            background-color: #20A3FF !important;
+        }
+
+        .tooltip.top .arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-top .arrow::before {
+            top: 0;
+            border-width: .4rem .4rem 0;
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-bottom .arrow::before {
+            bottom: 0;
+            border-width: 0 .4rem .4rem;
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.top .tooltip-arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .tooltip.right .tooltip-arrow {
+            border-right-color: #20A3FF !important;
+        }
+
+        .tooltip.bottom .tooltip-arrow {
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.left .tooltip-arrow {
+            border-left-color: #20A3FF !important;
+        }
+        -->
+    </style>
+
+</head>
+<body id="page-top" class="landing-page no-skin-config blue-bg">
+
+    <script>
+        function soloNumeros(e) {
+            var key = window.Event ? e.which : e.keyCode
+            return (key >= 48 && key <= 57)
+        }
+    </script>
+
+
+
+
+    <section id="testimonials" class=" navy-section testimonials shadow-lg " style="margin-top: 0; background-color:#20A3FF; padding-top:30px; background-image:none; padding-bottom: 0px">
+
+        <div class="container text-dark">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="~/Library/img/logo_banbif_blanco.png" height="35">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 text-white">
+                    <div>
+                        <!--
+                            <img class="hola" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_HOLA.png" style="margin-bottom: 15px;" alt="Hola" height="50">
+                            <br>
+                            -->
+
+                        <h1 class="fadeInUp" style="line-height:1; font-size:30px; margin-top:70px">
+                            <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">Banca</strong>
+                            <br>
+                            <small>
+                                <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">
+                                    por Internet Empresas
+                                </strong>
+                            </small>
+                        </h1>
+                        <div class="m-t-lg m-b-lg ">
+                            <img class="ptos" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_puntos.png" alt="puntos" height="12">
+                        </div>
+                        <div class="d-none d-sm-none d-md-block">
+                            <i class="fa fa-desktop fa-7x"></i>
+                            <i class="fa fa-laptop fa-5x"></i>
+                            <i class="fa fa-mobile-alt fa-3x"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp animated">
+                    <div id="inicio" class="text-white" style="font-family: Balto, Helvetica, Arialf; font-size:24px">
+                        Afíliate a la banca por internet
+                    </div>
+                    <div class="widget  white-bg dark-text shadow-sm p-xl  " style="border-radius: 15px">
+
+
+
+                        <div class="row m-t-sm">
+
+                            @*<?php
+                                for($i = 1; $i <= 3; $i++){
+                                $color = '#eeeeee';
+                                if($i <= $paso_actual)
+                                $color = '#20a3ff';
+                                ?>*@
+
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#eeeeee; border-bottom-width:5px">
+                                </div>
+                            </div>
+
+                            @*<?php } ?>*@
+                        </div>
+
+                        <form name="formulario" id="formularioaenviar" action="javascript:Continuar()" >
+                            <input type="hidden" name="paso2" value="1">
+                            <input type="hidden" id="numfirmates" name="numfirmates" value="1">
+                            <input type="hidden" id="version" name="version" value="2">
+
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <h2 class="text-success"><b>Elige la versión de la banca por internet</b></h2>
+                                </div>
+                            </div>
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <script>
+                                        function version(a) {
+                                            $('#v1_0').show();
+                                            $('#v1_1').hide();
+                                            $('#vb1_0').show();
+                                            $('#vb1_1').hide();
+
+                                            $('#v2_0').show();
+                                            $('#v2_1').hide();
+                                            $('#vb2_0').show();
+                                            $('#vb2_1').hide();
+
+
+                                            $('#v' + a + '_0').hide();
+                                            $('#v' + a + '_1').show();
+                                            $('#vb' + a + '_0').hide();
+                                            $('#vb' + a + '_1').show();
+
+                                            document.getElementById('version').value = a;
+                                            modo = a;
+
+                                            if (a == 1) {
+                                                $('#divFirmantesTokensFisicos').hide();
+                                                $('#divFirmantesTokensFisicos2').hide();
+                                                $('#divFirmantesTokensFisicos3').hide();
+                                                //document.getElementById('numfirmantes1').value = 1;
+                                                document.getElementById('numfirmantes2').value = 0;
+                                                document.getElementById('tokenTotal').value = 1;
+                                                tokens(a);
+                                                
+                                            } else {
+                                                $('#divFirmantesTokensFisicos').show();
+                                                $('#divFirmantesTokensFisicos2').show();
+                                                $('#divFirmantesTokensFisicos3').show();
+                                            }
+                                            
+                                        }
+                                    </script>
+
+                                    <div class="row mt-3">
+                                        <div class="col-lg-6">
+                                            <a href="" onclick="version(1); return false">
+                                            </a>
+                                            <div class="ibox">
+                                                <a href="" onclick="version(1); return false">
+                                                </a>
+                                                <div class="ibox-content product-box">
+                                                    <a href="" onclick="version(1); return false">
+                                                        <div class="product-imitation" style="display:none">
+                                                            <i class="fa fa-desktop fa-5x"></i>
+                                                        </div>
+                                                    </a>
+                                                    <div class="product-desc">
+                                                        <a href="" onclick="version(1); return false">
+                                                            <span id="v1_0" class="product-price text-center" style="width:100%; top:0px; background-color:#CCCCCC">
+                                                                <i class="fa fa-desktop"></i> Versión Consulta
+                                                            </span>
+
+                                                            <span id="v1_1" class="product-price text-center" style="width:100%; top:0px; background-color:#20A3FF; display:none">
+                                                                <i class="fa fa-desktop"></i> Versión Consulta
+                                                            </span>
+
+                                                            <span id="v_consulta_1" class="product-price blue-bg text-center" style="width:100%; top:0px; display:none">
+                                                                <i class="fa fa-desktop"></i> Versión Consulta
+                                                            </span>
+
+                                                            <div class="small m-t-lg " style="height: 120px;">
+                                                                <ul style="padding-inline-start: 10px;">
+                                                                    <li>Consulta de saldos y movimientos</li>
+                                                                    <li>Descarga de estados de cuenta</li>
+                                                                    <li>Visualizar información de productos</li>
+                                                                    <li>Consulta y registro de cobros de recaudación</li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </a>
+                                                        <br />
+                                                        <div class="m-t text-center">
+                                                            
+                                                               
+                                                                
+                                                            <span class="product-name">
+                                                                <a href="" onclick="version(1); return false">
+                                                                    US$ <label id="vconsulta" style="margin-bottom:0px"></label><br />
+                                                                    <label style="font-weight:100">(mensual)</label>
+                                                                </a>
+
+                                                            </span>
+
+                                                            <a id="vb1_0" href="#" onclick="version(1); return false" class="btn btn-xl btn-outline btn-success">Seleccionar</a>
+                                                            <a id="vb1_1" href="#" onclick="version(1); return false" class="btn btn-xl btn-success" style="display:none"><i class="fa fa-check"></i> Seleccionado</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="col-lg-6">
+                                            <a href="" onclick="version(2); return false">
+                                            </a>
+                                            <div class="ibox" style="cursor:pointer">
+                                                <a href="" onclick="version(2); return false">
+                                                </a>
+                                                <div class="ibox-content product-box">
+                                                    <a href="" onclick="version(2); return false">
+
+                                                        <div class="product-imitation" style="display:none">
+                                                            <i class="fa fa-desktop fa-5x"></i>
+                                                        </div>
+                                                    </a>
+                                                    <div class="product-desc">
+                                                        <a href="" onclick="version(2); return false">
+                                                            <span id="v2_0" class="product-price text-center" style="width:100%; top:0px; background-color:#CCCCCC; display:none">
+                                                                <i class="fa fa-desktop"></i> Versión Full
+                                                            </span>
+
+                                                            <span id="v2_1" class="product-price text-center" style="width:100%; top:0px; background-color:#20A3FF">
+                                                                <i class="fa fa-desktop"></i> Versión Full
+                                                            </span>
+
+                                                            <span id="v_completa_1" class="product-price blue-bg text-center" style="width:100%; top:0px; display:none">
+                                                                <i class="fa fa-desktop"></i> Versión Full
+                                                            </span>
+
+                                                            <div class="small m-t-lg " style="height: 120px;">
+                                                                <ul style="padding-inline-start: 10px;">
+                                                                    <li>Todas las funciones de la Versión Consulta</li>
+                                                                    <li>Transferencias (propias, terceros y al exterior)</li>
+                                                                    <li>Pagos (haberes, proveedores, servicios, tarjetas de crédito, préstamos, letras, etc)</li>
+                                                                    <li>Emisión masiva de cheques</li>
+                                                                    <li>Aprobaciones masivas y más</li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </a>
+                                                        <br />
+                                                        <div class="m-t text-center">
+                                                            @*<a href="" onclick="version(2); return false">
+                                                                <span class="product-name"> US$ <label id="vcompleta"></label></span>*@
+
+                                                                <span class="product-name">
+                                                                    <a href="" onclick="version(2); return false"> US$ <label id="vcompleta"  style="margin-bottom:0px"></label><br />
+                                                                    <label style="font-weight:100">(mensual)</label></a>
+                                                                    
+                                                                </span>
+
+                                                            @*</a>*@
+                                                            
+                                                            <a id="vb2_0" style="display:none" href="#" class="btn btn-xl btn-outline btn-success" onclick="version(2); return false">Seleccionar</a>
+                                                            <a id="vb2_1" href="#" class="btn btn-xl btn-success"><i class="fa fa-check" onclick="version(2); return false"></i> Seleccionado</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <h2 class="text-success"><b>Configuración de tu banca por internet</b></h2>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <h3 style="font-weight:500">Cuenta de cargo</h3>
+                                </div>
+                                <div class="col-lg-4 mt-3">
+                                    <select id="cboTipMoneda" name="cboTipMoneda" class="form-control form-control-3" required="" aria-required="">
+                                        <option disabled="" selected="" value=""> -- Seleccionar moneda -- </option>
+                                        <option value="MN">Soles (S/)</option>
+                                        <option value="ME">Dólares (US$)</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-lg-7 mt-3">
+                                    <input id="numero_cuenta" name="numero_cuenta" onKeyPress="return soloNumeros(event)" maxlength="12" type="text" class="form-control form-control-3" placeholder="Nro. de cuenta" required="">
+                                </div>
+
+
+                                <div class="col-lg-12 m-t-md">
+                                    <h3 style="font-weight:500">Identificación de la empresa y usuarios</h3>
+                                </div>
+
+                                
+                                
+                                
+
+                                <div class="col-lg-5 mt-3" align="justify">
+                                    <input id="entidad" name="entidad" maxlength="8" type="text" class="form-control form-control-3" placeholder="Entidad" required=""  title="" onmouseover="$('#mensajeEntidad').show()" onmouseout="$('#mensajeEntidad').hide()">
+                                </div>
+
+                                <div class="col-lg-7 mt-3" align="justify"> 
+                                    <input id="admin" name="admin" type="text" class="form-control form-control-3" placeholder="Usuario administrador: ADMIN" readonly="" onmouseover="$('#mensajeAdmin').show()" onmouseout="$('#mensajeAdmin').hide()">
+                                </div>
+
+                                <div id="mensajeEntidad" class="col-lg-12 m-t-md" style="display:none">
+                                    <div class="alert alert-info" style="font-size:12px">
+                                        <b>Entidad:</b> Indique un nombre que identificará a la Empresa en la Banca por Internet (Máximo 8 caracteres alfanuméricos). En caso la Entidad coincida con otra ya registrada, asignaremos unos dígitos para distinguirlos.<br />
+                                    </div>
+                                </div>
+
+                                <div id="mensajeAdmin" class="col-lg-12 m-t-md" style="display:none">
+                                    <div class="alert alert-info" style="font-size:12px">
+                                        <b>Usuario administrador:</b> Persona responsable de la creación y configuración de usuarios, asignar niveles de acceso y límites por operación, generar o reasignar claves. Se asignará un token a este usuario (costo único de token US$50.00).
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mt-3">
+                                    <input id="dniresponsable" name="dniresponsable"  onKeyPress="return soloNumeros(event)" maxlength="8" type="text" class="form-control form-control-3" placeholder="DNI Administrador" required="">
+                                </div>
+
+                                <div class="col-lg-8 mt-3">
+
+                                    <input id="responsable" name="responsable" type="text" class="form-control form-control-3" placeholder="Nombres y Apellidos del usuario administrador" required="" >
+
+                                </div>
+
+                                <div class="col-lg-8 mt-3">
+
+                                    <input id="emailresponsable" name="emailresponsable" type="text" class="form-control form-control-3" placeholder="Email administrador" required="">
+
+                                </div>
+                                <div class="col-lg-4 mt-3">
+                                    <input id="telefonoresponsable" name="telefonoresponsable" onKeyPress="return soloNumeros(event)" maxlength="9" type="text" class="form-control form-control-3" placeholder="Teléfono" required="">
+                                </div>
+                            </div>
+
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+
+                                    <div class="row" id="tokenVersionFull">
+
+
+                                        <div class="col-lg-12 m-t-md">
+                                            <h3 style="font-weight:500">Número de tokens</h3>
+                                        </div>
+
+                                        
+                                        <div class="col-lg-6 mt-3" align="justify" style="display:none">
+                                            Firmantes con token digital
+                                            <select name="numfirmantes1" id="numfirmantes1" class="form-control form-control-3" onchange="tokens(this.value)" required="">
+                                                <option value="0" disabled="disabled" selected="selected">Seleccionar</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                            </select><small>US$ 0.00 por token</small>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-3" align="justify" id="divFirmantesTokensFisicos">
+                                            Firmantes con token físico
+                                            <select name="numfirmantes2" id="numfirmantes2" class="form-control form-control-3" onchange="tokens(this.value)" required="">
+                                                <option value="0" disabled="disabled" selected="selected">Seleccionar</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                            </select><small>US$ 50.00 por token</small>
+                                        </div>
+                                        <div class="col-lg-6 mt-3" align="justify" id="divFirmantesTokensFisicos2">
+                                        </div>
+
+
+                                        <div class="col-lg-6 mt-3" align="justify">
+                                            Cantidad de tokens
+                                            <input type="text" readonly min="1" id="tokenTotal" value="1" class="form-control form-control-3">
+                                            <small>Se asignará un token a la Empresa por cada firmante indicado (costo único por token físico US$50.00).</small>
+                                            <br />
+                                            <small>
+                                                Se asignará un token físico para el usuario administrador encargado de configurar los usuarios.  
+                                            </small>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-3" align="justify">
+                                            <br>
+                                            <div class="alert alert-primary">
+                                                <b>Precio total</b>
+                                                <br>
+                                                Token administrador: US$ 50.00
+                                                <br>
+                                                <div id="divFirmantesTokensFisicos3">
+                                                    Tokens firmantes: US$ <label id="lblTotalTokenFisico">0.00</label>
+                                                </div>                                                
+                                                <hr>
+                                                Total: US$ <label id="lblTotalToken">50.00</label>
+                                                <br>
+
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function tokens(a) {
+
+                                                if (a == "") a = 0;
+                                                //t1 = parseInt(document.getElementById('numfirmantes1').value);
+                                                t2 = parseInt(document.getElementById('numfirmantes2').value);
+                                                document.getElementById('tokenTotal').value = t2 + 1;
+
+                                                $('#lblTotalTokenFisico').text((t2 * 50.00).toFixed(2));
+                                                $('#lblTotalToken').text((50.00 + ((t2) * 50.00)).toFixed(2));
+                                            }
+
+                                        </script>
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="col-lg-12 m-t-lg">
+                                    <a href="#" onclick="Atras()" class="btn btn-gray btn-xs">
+                                        <i class="fa fa-chevron-left"></i> Atrás
+                                    </a>
+                                    <button type="submit" id="btnEnviar" class="btn btn-success btn-lg float-right">
+                                        Continuar <i class="fa fa-chevron-right"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="blue-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line" style="margin-top:25px; border-color: #ffffff"></div>
+                    <div class="m-t-sm">
+                        <p style="color: #ffffff !important"><b>BanBif</b> | Reinventa 2020</p>
+                    </div>
+                    <div class="navy-line" style="margin-top:-3px; margin-bottom:20px; border-color: #ffffff"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Mainly scripts -->
+    <script src="~/Library/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Library/js/popper.min.js"></script>
+    <script src="~/Library/js/bootstrap.js"></script>
+    <script src="~/Library/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Library/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="~/Library/js/inspinia.js"></script>
+    <script src="~/Library/js/plugins/pace/pace.min.js"></script>
+    <script src="~/Library/js/plugins/wow/wow.min.js"></script>
+
+    <!-- Jasny -->
+    <script src="~/Library/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+    <!-- DROPZONE -->
+    <script src="~/Library/js/plugins/dropzone/dropzone.js"></script>
+
+    <!-- iCheck -->
+    <script src="~/Library/js/plugins/iCheck/icheck.min.js"></script>
+
+    <script>
+        var modo = 2;
+        $(document).ready(function () {
+
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 80
+            });
+
+            
+
+            /*OBTENER DATOS*/
+            var objRequest = {};
+            objRequest.estado = 1;
+
+            $.ajax({
+                url: sessionStorage.APP +  "/Configuracion/ObtenerDatos",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    console.log(resp);
+                    if (resp.result) {
+                        $.each(resp.data, function (index, item) {
+                            if (item.dato == "vconsulta") {
+                                $('#vconsulta').text(item.valor.toFixed(2));
+                            } else if (item.dato == "vcompleta") {
+                                $('#vcompleta').text(item.valor.toFixed(2));
+                            }
+                        });
+                        
+                    }
+                }
+            });
+
+
+            /*CARGAR DATOS SOLICITUD*/
+            if (sessionStorage.CODIGOREGISTRO != null) {
+                /*configuracion*/
+                var objRequest = {};
+                objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+
+                $.ajax({
+                    url: sessionStorage.APP + "/Configuracion/Obtener",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    processData: true,
+                    data: JSON.stringify(objRequest),
+                    success: function (resp) {
+                        console.log(resp);
+                        if (resp.result) {
+                            if (resp.data.version == 'Full') {
+                                version(2);
+                            } else {
+                                version(1);
+                            }
+
+                            $('#cboTipMoneda').val(resp.data.moneda);
+                            $('#numero_cuenta').val(resp.data.cuentacargo);
+                            $('#entidad').val(resp.data.entidad);
+                            $('#dniresponsable').val(resp.data.dniadministrador);
+
+                            $('#responsable').val(resp.data.nombreadministrador);
+                            $('#emailresponsable').val(resp.data.emailadministrador);
+                            $('#telefonoresponsable').val(resp.data.telefonoadministrador);
+                            $('#numfirmantes2').val(resp.data.tokenfisico);
+                            tokens(resp.data.tokenfisico);
+                        }
+                    }
+                });
+            }
+
+
+            function SmoothScrollTo(id_or_Name, timelength) {
+                var timelength = timelength || 1000;
+                $('html, body').animate({
+                    scrollTop: $(id_or_Name).offset().top
+                }, timelength, function () {
+                    window.location.hash = id_or_Name;
+                });
+            }
+
+            if (screen.width <= 500) {
+                SmoothScrollTo("#inicio", 1000);
+            }
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            });
+
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function (event) {
+                var link = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(link.attr('href')).offset().top - 50
+                }, 500);
+                event.preventDefault();
+                $("#navbar").collapse('hide');
+            });
+        });
+
+        var cbpAnimatedHeader = (function () {
+            var docElem = document.documentElement,
+                    header = document.querySelector('.navbar-default'),
+                    didScroll = false,
+                    changeHeaderOn = 200;
+            function init() {
+                window.addEventListener('scroll', function (event) {
+                    if (!didScroll) {
+                        didScroll = true;
+                        setTimeout(scrollPage, 250);
+                    }
+                }, false);
+            }
+            function scrollPage() {
+                var sy = scrollY();
+                if (sy >= changeHeaderOn) {
+                    $(header).addClass('navbar-scroll')
+                }
+                else {
+                    $(header).removeClass('navbar-scroll')
+                }
+                didScroll = false;
+            }
+            function scrollY() {
+                return window.pageYOffset || docElem.scrollTop;
+            }
+            init();
+
+        })();
+
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+
+    </script>
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        function Atras() {
+            var numfirmantes = 0; 
+            if ($('#numfirmantes2').val() != "") {
+                numfirmantes = $('#numfirmantes2').val();
+            }
+
+            var objRequest = {};
+            objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+            objRequest.version = $('#version').val();
+            objRequest.monedacargo = $('#cboTipMoneda').val();
+            objRequest.cuentacargo = $('#numero_cuenta').val();
+            objRequest.entidad = $('#entidad').val();
+            objRequest.firmantes = $('#tokenTotal').val();
+            objRequest.tokenfisico = numfirmantes;
+            objRequest.tokendigital = $('#numfirmantes1').val();
+            objRequest.dniadministrador = $('#dniresponsable').val();
+            objRequest.nombreadministrador = $('#responsable').val();
+            objRequest.emailadministrador = $('#emailresponsable').val();
+            objRequest.telefonoadministrador = $('#telefonoresponsable').val();
+
+            $.ajax({
+                url: sessionStorage.APP + "/Configuracion/ActualizarEmpresa",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    console.log(resp);
+                    if (resp.result) {
+                        window.location.href = sessionStorage.APP + "/Home";
+                    }
+                }
+            });
+
+            
+        }
+
+        function Continuar() {
+            if (modo == 2) {
+                if ($('#numfirmantes2').val() == "" || $('#numfirmantes2').val() == 0 || $('#numfirmantes2').val() == null) {
+                    alert("Debe seleccionar un número de firmantes con token físico.");
+                    $('#numfirmantes2').focus();
+                    return false;
+                }
+            }            
+
+            var objRequest = {};
+            objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+            objRequest.version = $('#version').val();
+            objRequest.monedacargo = $('#cboTipMoneda').val();
+            objRequest.cuentacargo = $('#numero_cuenta').val();
+            objRequest.entidad = $('#entidad').val();
+            objRequest.firmantes = $('#tokenTotal').val();
+            objRequest.tokenfisico = $('#numfirmantes2').val();
+            objRequest.tokendigital = $('#numfirmantes1').val();
+            objRequest.dniadministrador = $('#dniresponsable').val();
+            objRequest.nombreadministrador = $('#responsable').val();
+            objRequest.emailadministrador = $('#emailresponsable').val();
+            objRequest.telefonoadministrador = $('#telefonoresponsable').val();
+
+            $.ajax({
+                url: sessionStorage.APP + "/Configuracion/ActualizarEmpresa",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    console.log(resp);
+                    if (resp.result) {
+                        window.location.href = sessionStorage.APP + "/DatosEntrega";
+                    }
+                }
+            });
+        }
+    </script>
+
+
+</body>
+</html>

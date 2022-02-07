@@ -1,0 +1,12 @@
+C:\Personal\Banbif\Innovacion\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\bin\Debug\BanBif.BXIEmpresas.BE.dll
+C:\Personal\Banbif\Innovacion\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\bin\Debug\BanBif.BXIEmpresas.BE.pdb
+C:\Personal\Banbif\Innovacion\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.csproj.CoreCompileInputs.cache
+C:\Personal\Banbif\Innovacion\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.dll
+C:\Personal\Banbif\Innovacion\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.pdb
+C:\Personal\Banbif\Innovacion\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.csproj.AssemblyReference.cache
+C:\Users\DRomero\Desktop\MDP\BxI\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\bin\Debug\BanBif.BXIEmpresas.BE.dll
+C:\Users\DRomero\Desktop\MDP\BxI\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\bin\Debug\BanBif.BXIEmpresas.BE.pdb
+C:\Users\DRomero\Desktop\MDP\BxI\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.csproj.AssemblyReference.cache
+C:\Users\DRomero\Desktop\MDP\BxI\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.csproj.CoreCompileInputs.cache
+C:\Users\DRomero\Desktop\MDP\BxI\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.dll
+C:\Users\DRomero\Desktop\MDP\BxI\BanBif.BXIEmpresas\BanBif.BXIEmpresas.BE\obj\Debug\BanBif.BXIEmpresas.BE.pdb

@@ -1,0 +1,713 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BanBif | Banca por internet Empresas </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Library/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="~/Library/css/animate.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="~/Library/font-awesome/css/all.min.css" rel="stylesheet">
+
+
+    <link href="~/Library/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Library/css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/Library/css/fonts/fonts.css">
+
+
+    <style type="text/css">
+        <!--
+        /* Tooltip */
+        .tooltip {
+            text-align: left !important;
+            margin-left: 15px;
+        }
+
+        .tooltip-inner {
+            text-align: left !important;
+            padding: 15px !important;
+            max-width: 300px !important;
+        }
+
+        .tooltip .tooltip-inner {
+            text-align: justify !important;
+            background-color: #20A3FF !important;
+        }
+
+        .tooltip.top .arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-top .arrow::before {
+            top: 0;
+            border-width: .4rem .4rem 0;
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-bottom .arrow::before {
+            bottom: 0;
+            border-width: 0 .4rem .4rem;
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.top .tooltip-arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .tooltip.right .tooltip-arrow {
+            border-right-color: #20A3FF !important;
+        }
+
+        .tooltip.bottom .tooltip-arrow {
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.left .tooltip-arrow {
+            border-left-color: #20A3FF !important;
+        }
+        -->
+    </style>
+
+</head>
+<body id="page-top" class="landing-page no-skin-config blue-bg">
+
+    <script>
+        function soloNumeros(e) {
+            var key = window.Event ? e.which : e.keyCode
+            return (key >= 48 && key <= 57)
+        }
+
+        function soloLetrasYNum(e) {
+            
+            var key = window.Event ? e.which : e.keyCode
+            return ((key >= 48 && key <= 57) || (key >= 65 && key <= 90) || (key >= 97 && key <= 122))
+        }
+
+        function soloLetras(e) {
+            var key = window.Event ? e.which : e.keyCode
+            //Ñ = 209...241            
+            return ((key >= 65 && key <= 90) || (key >= 97 && key <= 122) || key == 32);
+        }
+    </script>
+
+
+
+
+    <section id="testimonials" class=" navy-section testimonials shadow-lg " style="margin-top: 0; background-color:#20A3FF; padding-top:30px; background-image:none; padding-bottom: 0px">
+
+        <div class="container text-dark">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="~/Library/img/logo_banbif_blanco.png" height="35">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 text-white">
+                    <div>
+                        <!--
+                            <img class="hola" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_HOLA.png" style="margin-bottom: 15px;" alt="Hola" height="50">
+                            <br>
+                            -->
+
+                        <h1 class="fadeInUp" style="line-height:1; font-size:30px; margin-top:70px">
+                            <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">Banca</strong>
+                            <br>
+                            <small>
+                                <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">
+                                    por Internet Empresas
+                                </strong>
+                            </small>
+                        </h1>
+                        <div class="m-t-lg m-b-lg ">
+                            <img class="ptos" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_puntos.png" alt="puntos" height="12">
+                        </div>
+                        <div class="d-none d-sm-none d-md-block">
+                            <i class="fa fa-desktop fa-7x"></i>
+                            <i class="fa fa-laptop fa-5x"></i>
+                            <i class="fa fa-mobile-alt fa-3x"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp animated">
+                    <div id="inicio" class="text-white" style="font-family: Balto, Helvetica, Arialf; font-size:24px">
+                        Afíliate a la banca por internet
+                    </div>
+                    <div class="widget  white-bg dark-text shadow-sm p-xl  " style="border-radius: 15px">
+
+
+
+                        <div class="row m-t-sm">
+
+                            @*<?php
+                                for($i = 1; $i <= 3; $i++){
+                                $color = '#eeeeee';
+                                if($i <= $paso_actual)
+                                $color = '#20a3ff';
+                                ?>*@
+
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#eeeeee; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#eeeeee; border-bottom-width:5px">
+                                </div>
+                            </div>
+
+                            @*<?php } ?>*@
+                        </div>
+
+
+                        <div class="row m-t-md">
+                            <div class="col-lg-12">
+                                <h2><span class="text-success" style="font-weight:700">HOLA,</span> ingresa los datos de la empresa</h2>
+                            </div>
+                        </div>
+
+                        <form action="javascript:Registrar()">
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-4 m-b-md">
+                                            RUC
+                                            <input type="tel" class="form-control form-control-3 m-t-xs" id="txtRuc" name="txtRuc" value="" required
+                                                   onKeyPress="return soloNumeros(event)" onkeyup="buscarRuc()" maxlength="11" autocomplete="off">
+                                        </div>
+                                        <div class="col-lg-8 m-b-md">
+                                            Razon social
+                                            <input type="text" class="form-control form-control-3 m-t-xs" id="txtRazonSocial" name="txtRazonSocial" value="" required autocomplete="off">
+                                        </div>
+                                        <div class="col-lg-4 m-b-md">
+                                            Telefono de contacto
+                                            <input type="tel" class="form-control form-control-3 m-t-xs" id="txtTelefono" name="telefono" value="" required onKeyPress="return soloNumeros(event)" maxlength="9" autocomplete="off">
+                                        </div>
+                                        <div class="col-lg-8 m-b-md">
+                                            Dirección
+                                            <input type="text" class="form-control form-control-3 m-t-xs" id="txtDireccion" name="direccion" value="" required autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-t-md">
+                                        <div class="col-lg-12">
+                                            <h2  class="text-success"><b>Representante legal</b></h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-t-md">
+                                        <div class="col-lg-12">
+                                            <div class="alert alert-info" style="font-size:12px">
+                                                <i class="fa fa-info-circle text-success"></i> Puedes agregar hasta 3 representantes<br />
+                                                <i class="fa fa-info-circle text-success"></i> Estos representantes son los que firmaran la solicitud de afiliación
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12 m-b-md">
+                                            <div id="listaRep1">
+                                                <div class="row">
+                                                    <div class="col-lg-12 mt-3">
+                                                        <label class="label label-success"><b>Representante legal 1</b></label>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <input id="representante_emp1" name="representante_emp1" type="text" class="form-control form-control-3" placeholder="Nombre representante legal" required="" onKeyPress="return soloLetras(event)"  style="text-transform:uppercase">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-5 mt-3">
+                                                        <select id="tipos1" name="tipos1" class="form-control form-control-3" required="">
+                                                            <option value="" selected="" disabled="">--- Tipo de documento ---</option>
+                                                            <option value="1">DNI</option>
+                                                            <option value="2">Pasaporte</option>
+                                                            <option value="3">Carnét de extranjería</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-3">
+                                                        <input id="nrodocrep1" name="nrodocrep1" type="text" class="form-control form-control-3" maxlength="10" placeholder="Numero de documento" required="" onKeyPress="return soloLetrasYNum(event)" >
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="listaRep2" style="display: none">
+                                                <div class="row">
+                                                    <div class="col-lg-12 mt-3">
+                                                        <label class="label label-success"><b>Representante legal 2</b></label>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <input id="representante_emp2" name="representante_emp2" type="text" class="form-control form-control-3" placeholder="Nombre representante legal"  onKeyPress="return soloLetras(event)"  style="text-transform:uppercase">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-5 mt-3">
+                                                        <select id="tipos2" name="tipos2" class="form-control form-control-3">
+                                                            <option value="" selected="" disabled="">--- Tipo de documento ---</option>
+                                                            <option value="1">DNI</option>
+                                                            <option value="2">Pasaporte</option>
+                                                            <option value="3">Carnét de extranjería</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-3">
+                                                        <input id="nrodocrep2" name="nrodocrep2" type="text" class="form-control form-control-3" maxlength="10" placeholder="Numero de documento"  onKeyPress="return soloLetrasYNum(event)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="listaRep3" style="display: none">
+                                                <div class="row">
+                                                    <div class="col-lg-12 mt-3">
+                                                        <label class="label label-success"><b>Representante legal 3</b></label>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <input id="representante_emp3" name="representante_emp3" type="text" class="form-control form-control-3" placeholder="Nombre representante legal" onKeyPress="return soloLetras(event)" style="text-transform:uppercase">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-5 mt-3">
+                                                        <select id="tipos3" name="tipos3" class="form-control form-control-3">
+                                                            <option value="" selected="">--- Tipo de documento ---</option>
+                                                            <option value="1">DNI</option>
+                                                            <option value="2">Pasaporte</option>
+                                                            <option value="3">Carnét de extranjería</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-3">
+                                                        <input id="nrodocrep3" name="nrodocrep3" type="text" class="form-control form-control-3" maxlength="12" placeholder="Numero de documento" onKeyPress="return soloLetrasYNum(event)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12 mt-3">
+                                                    <a id="btnAgregarRep" href="" onclick="AgregarRepresentante_1(); return false" class="btn btn-success btn-outline btn-xs"><i class="fa fa-plus"></i> <b>Agregar</b></a>
+                                                    <a href="" onclick="BorrarRepresentante_1(); return false" class="btn btn-danger btn-outline btn-xs"><i class="fa fa-trash"></i> <b>Eliminar</b></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12 m-t-sm">
+                                            <button id="continuar" type="submit" class="btn btn-success btn-lg float-right">
+                                                Continuar <i class="fa fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="blue-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line" style="margin-top:25px; border-color: #ffffff"></div>
+                    <div class="m-t-sm">
+                        <p style="color: #ffffff !important"><b>BanBif</b> | Reinventa 2020</p>
+                    </div>
+                    <div class="navy-line" style="margin-top:-3px; margin-bottom:20px; border-color: #ffffff"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="terminos" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="navy-line" style="margin-top: 0px"></div>
+                            <h1>Términos y condiciones</h1>
+                            <p><small>Aplicables a la Solicitud de Compra de Deuda de Tarjeta de Crédito de otra empresa del sistema financiero, con cargo a la Línea de crédito o al + Efectivo (ampliación temporal de la línea de crédito) de la Tarjeta de Crédito del BanBif</small></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-12 text-justify" style="padding-right: 50px">
+                            <ul>
+                                <li>
+                                    El Cliente acepta ser responsable por la información consignada en la presente solicitud web, la cual es proporcionada con carácter de Declaración Jurada, sujetándose el Cliente a lo dispuesto en el Artículo 179º de la Ley 26702. El cliente es el único responsable de consignar los datos correctos y completos de su Tarjeta del BanBif a la que se cargará la compra de deuda, así como los datos de su(s) Tarjeta(s) de Crédito a pagar, del banco de destino, del monto y la moneda. El BanBif sólo se responsabiliza por pagar al banco de destino considerando los datos antes indicados, por lo que, otros datos como el nombre del cliente, el tipo o el número del documento de identidad son únicamente referenciales.
+                                </li>
+                                <li>
+                                    El Cliente se obliga a revisar los movimientos de su(s) Tarjeta(s) de Crédito y las obligaciones pendientes que mantiene en la(s) entidad financiera(s) de destino y verificar el pago realizado por el BanBif a su(s) tarjeta(s) de crédito, responsabilizándose de dar las instrucciones necesarias a dicha(s) entidad(es), incluyendo la forma en que deberá ser aplicado el pago realizado.
+                                </li>
+                                <li>
+                                    BanBif no se hace responsable por el vencimiento de las obligaciones vigentes que El Cliente mantenga con las entidades a las cuales se está realizando la compra de deuda, ni por los cobros que pudieran realizar dichas entidades por los pagos recibidos, ni por la aplicación que pueda hacer el banco de destino de los fondos recibidos de BanBif.
+                                </li>
+                                <li>
+                                    El Cliente conoce y acepta que el proceso de compra de deuda dura aproximadamente cinco (05) días útiles.
+                                </li>
+                                <li>
+                                    Una vez procesada(s) la(s) compra(s) de deuda de la presente solicitud, no procede la devolución de la comisión “Gestión para compra de deuda” descrita en el tarifario general del banco. Esta comisión será cargada en la línea de crédito de la tarjeta. Aplicará el ITF en los supuestos previstos en el D.S.N°150-2007-EF.
+                                </li>
+                                <li>
+                                    Cuando la compra de deuda se realice bajo la modalidad +Efectivo (ampliación temporal de la línea de crédito), independientemente de la moneda de la deuda a pagar, la compra de deuda se registrará en el +Efectivo sólo en Nuevos Soles, utilizando el tipo de cambio venta del día en que se pague la deuda en el otro banco. Si se solicitara varias compras de deuda, se registrará la suma total a pagar de acuerdo a los importes indicados en el anverso de este documento.
+                                </li>
+                                <li>
+                                    El importe exacto de la cuota que se genere por la compra de deuda bajo la modalidad +Efectivo será indicado en el Estado de Cuenta.
+                                </li>
+                                <li>
+                                    Las cuotas que se generen por la compra de deuda bajo la modalidad +Efectivo, serán cargadas mensualmente en la línea de la tarjeta de crédito, conforme se establece en el Contrato Cuenta Corriente especial Tarjeta de Crédito. La cuota será incluida dentro del pago mínimo indicado en tu estado de cuenta. Dicha cuota disminuye el saldo disponible en la línea de crédito de tu Tarjeta hasta que realices el pago. Los importes de "Pago Total" y “Pago Total Mes” que figuren en tu estado de cuenta, NO CONSIDERAN saldo total de la deuda del +Efectivo, solo la(s) cuota(s) mensual(es) devengada(s). El saldo total del +Efectivo el recuadro de “Saldo a Pagar” del rubro “ampliación Temporal de la Línea de Crédito / +Efectico” de tu estado de cuenta.
+                                </li>
+                                <li>
+                                    En aplicación del Art. 25° inc. 25.6 de la Resolución SBS N°3274-2017, no se emitirá cronograma de pagos. En caso el cliente solicite efectuar el prepago parcial o total de la Ampliación Temporal de la Línea, deberá informarlo mediante instrucción escrita a fin de aplicar el pago directamente a dicha Ampliación Temporal de la Línea, previa coordinación con su Funcionario de Negocios.
+                                </li>
+                                <li>
+                                    Declaro conocer y aceptar las condiciones del + Efectivo; así como, la cláusula 21 del Contrato Cta. Cte. Especial Tarjeta de Crédito, publicado en www.banbif.com.pe aplicable a esta ampliación temporal de línea.
+                                </li>
+                                <li>
+                                    Para el desembolso del +Efectivo aplica ITF (0.005%) según lo previsto en el TUO de la Ley N°28194, aprobado por D.S.N°150- 2007-EF. Dicho importe se cargará en el estado de cuenta que corresponda a la fecha de la disposición del + Efectivo dentro de la línea de la tarjeta de crédito sin generar intereses adicionales al financiamiento y se consideran en el plan de financiamiento de la tarjeta.
+                                </li>
+                                <li>
+                                    Las comisiones, gastos y la penalidad por incumplimiento de pago serán cobrados dentro del plan revolvente, cualquiera sea el plan de financiamiento utilizado por el cliente.
+                                </li>
+                                <li>
+                                    En caso la compra de deuda se realice mediante transferencia interbancaria, dicha transferencia podría ser rechazada o devuelta por los bancos de destino en los siguientes casos y/o considerando los siguientes plazos: (i) Hasta 24 horas útiles: cuenta errada   o suspendida, inexistente, con número inválido, bloqueada, con error de formato, con fecha de compensación errónea, con moneda distinta a la de la cuenta a acreditar, con sucursal u oficina no habilitada, por transacción duplicada. (ii) Hasta el tercer día útil: a solicitud del BanBif. La devolución de la transferencia será abonada a la Tarjeta de Crédito BanBif del Cliente aplicándose al pago de la deuda contraída con la tarjeta en el orden de prelación (imputación del pago) establecido en el contrato de Tarjeta de Crédito. La presente solicitud está condicionada a la evaluación crediticia que realice el BanBif y a que la forma y el medio de pago utilizados por el BanBif sean aceptados por el banco de destino.
+                                </li>
+                                <li>
+                                    El cliente conoce y acepta que los pagos por compras de deuda de los bancos Falabella y Ripley se realizarán con un cheque de gerencia que será entregado al cliente en nuestras oficinas. Si dicho cheque no es recogido por el cliente, será abonado a la tarjeta Banbif del cliente, aplicándose al pago de la deuda contraída con la tarjeta en el orden de prelación (imputación del pago) establecido en el contrato de tarjeta de crédito.
+                                </li>
+                                <li>
+                                    El banco no se responsabiliza por los cobros de comisiones, gastos u otros cargos que pueda realizar la entidad financiera receptora del pago, aun cuando este sea rechazado o devuelto.
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="~/Library/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Library/js/popper.min.js"></script>
+    <script src="~/Library/js/bootstrap.js"></script>
+    <script src="~/Library/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Library/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="~/Library/js/inspinia.js"></script>
+    <script src="~/Library/js/plugins/pace/pace.min.js"></script>
+    <script src="~/Library/js/plugins/wow/wow.min.js"></script>
+
+    <!-- Jasny -->
+    <script src="~/Library/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+    <!-- DROPZONE -->
+    <script src="~/Library/js/plugins/dropzone/dropzone.js"></script>
+
+    <!-- iCheck -->
+    <script src="~/Library/js/plugins/iCheck/icheck.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            sessionStorage.setItem("APP","@ViewBag.App");
+
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 80
+            });
+
+            function SmoothScrollTo(id_or_Name, timelength) {
+                var timelength = timelength || 1000;
+                $('html, body').animate({
+                    scrollTop: $(id_or_Name).offset().top
+                }, timelength, function () {
+                    window.location.hash = id_or_Name;
+                });
+            }
+
+            if (screen.width <= 500) {
+                SmoothScrollTo("#inicio", 1000);
+            }
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            });
+
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function (event) {
+                var link = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(link.attr('href')).offset().top - 50
+                }, 500);
+                event.preventDefault();
+                $("#navbar").collapse('hide');
+            });
+
+
+            /*CARGAR DATOS*/
+            if (sessionStorage.CODIGOREGISTRO != null) {
+                $('#txtRuc').val(sessionStorage.ruc);
+                buscarRuc();
+
+                $('#txtTelefono').val(sessionStorage.telefono);
+                $('#txtDireccion').val(sessionStorage.direccion);
+
+                /*REPRESENTANTES*/
+                var objRequest = {};
+                objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+
+                $.ajax({
+                    url: sessionStorage.APP + "/Home/ObtenerRepresentantes",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    processData: true,
+                    data: JSON.stringify(objRequest),
+                    success: function (resp) {
+                        console.log(resp);
+                        if (resp.result) {
+                            var cont = 1;
+                            $.each(resp.data.representantes, function (index, item) {
+                                $('#listaRep' + cont).show();
+                                $('#representante_emp' + cont).val(item.representante)
+                                $('#nrodocrep' + cont).val(item.documento)
+                                $('#tipos' + cont).val(item.tipodocumento)
+                                cont += 1;
+                            });
+                               
+                            countRepresentante = cont - 1;
+                            if (countRepresentante == 3) {
+                                $('#btnAgregarRep').hide();
+                            }
+                        }
+                    }
+                });
+            }
+
+        });
+
+        var cbpAnimatedHeader = (function () {
+            var docElem = document.documentElement,
+                    header = document.querySelector('.navbar-default'),
+                    didScroll = false,
+                    changeHeaderOn = 200;
+            function init() {
+                window.addEventListener('scroll', function (event) {
+                    if (!didScroll) {
+                        didScroll = true;
+                        setTimeout(scrollPage, 250);
+                    }
+                }, false);
+            }
+            function scrollPage() {
+                var sy = scrollY();
+                if (sy >= changeHeaderOn) {
+                    $(header).addClass('navbar-scroll')
+                }
+                else {
+                    $(header).removeClass('navbar-scroll')
+                }
+                didScroll = false;
+            }
+            function scrollY() {
+                return window.pageYOffset || docElem.scrollTop;
+            }
+            init();
+
+        })();
+
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+
+    </script>
+
+
+
+
+
+    <script>
+
+        var countRepresentante = 1;
+
+        function AgregarRepresentante_1() {
+            if (countRepresentante < 3) {
+                countRepresentante += 1;
+                $('#listaRep' + countRepresentante).show();
+                document.getElementById('tipos' + countRepresentante).required = true;
+                document.getElementById('nrodocrep' + countRepresentante).required = true;
+                document.getElementById('representante_emp' + countRepresentante).required = true;
+            }
+
+            if (countRepresentante == 3) {
+                $('#btnAgregarRep').hide();
+            } else {
+                $('#btnAgregarRep').show();
+            }
+        }
+
+        function BorrarRepresentante_1() {
+            if (countRepresentante > 1) {
+                $('#listaRep' + countRepresentante).hide();
+                document.getElementById('representante_emp' + countRepresentante).required = false;
+                document.getElementById('tipos' + countRepresentante).required = false;
+                document.getElementById('nrodocrep' + countRepresentante).required = false;
+                document.getElementById('representante_emp' + countRepresentante).value = '';
+                document.getElementById('tipos' + countRepresentante).value = '';
+                document.getElementById('nrodocrep' + countRepresentante).value = '';
+                countRepresentante -= 1;
+            }
+
+            if (countRepresentante == 3) {
+                $('#btnAgregarRep').hide();
+            } else {
+                $('#btnAgregarRep').show();
+            }
+        }
+
+        function buscarRuc() {
+            var objRequest = {};
+            
+            var ruc = $('#txtRuc').val();
+            if (ruc.length == 11 || ruc.length == 12) {
+                
+                objRequest.ruc = ruc;
+
+                $.ajax({
+                    url: sessionStorage.APP + "/Home/BuscarProveedor",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    processData: true,                    
+                    data: JSON.stringify(objRequest),
+                    success: function (resp) {
+                        console.log(resp);
+                        if (resp.result) {
+                            $('#txtRazonSocial').val(resp.data.proveedor);
+                            $('#txtRazonSocial').prop('readonly', true);
+                        }
+                        else {
+                            $('#txtRazonSocial').val("");
+                            $('#txtRazonSocial').prop('readonly', false);
+                        }
+                    }
+                });
+            }
+            else {
+                $('#txtRazonSocial').val("");
+                $('#txtRazonSocial').prop('readonly', false);
+            }
+        }
+
+        function Registrar() {
+            var objRequest = {};
+            if (sessionStorage.CODIGOREGISTRO != null) {
+                objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO
+            }
+            
+            objRequest.ruc = $('#txtRuc').val();
+            objRequest.razonsocial = $('#txtRazonSocial').val();
+            objRequest.telefono = $('#txtTelefono').val();
+            objRequest.direccion = $('#txtDireccion').val();
+            objRequest.ip = "testIP";
+
+            sessionStorage.setItem("ruc", objRequest.ruc);
+            sessionStorage.setItem("telefono", objRequest.telefono);
+            sessionStorage.setItem("direccion", objRequest.direccion);
+
+            var arrRepresentante = [];
+
+            for (i = 1; i <= countRepresentante; i++) {
+                var objRepresentante = {};
+
+                var nombre = $('#representante_emp' + i).val();
+                var tipodocumento = $('#tipos' + i).val();
+                var documento = $('#nrodocrep' + i).val();
+
+                objRepresentante.nombre = nombre;
+                objRepresentante.tipodocumento = tipodocumento;
+                objRepresentante.documento = documento;
+
+                arrRepresentante.push(objRepresentante);
+            }
+
+            objRequest.Representante = arrRepresentante;
+
+            $.ajax({
+                url: sessionStorage.APP + "/Home/RegistrarEmpresa",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    console.log(resp);
+                    if (resp.result) {
+                        sessionStorage.setItem("CODIGOREGISTRO", resp.data.codigoregistro);
+                        window.location.href = sessionStorage.APP + "/Configuracion";
+                    }
+                    else {
+                        alert("Ocurrio un error, por favor intente de nuevo.");
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

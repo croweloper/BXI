@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="canalesModelStoreContainer" CdmEntityContainer="canalesEntities">
+    <EntitySetMapping Name="FAEL_PROVEEDORES">
+      <EntityTypeMapping TypeName="canalesModel.FAEL_PROVEEDORES">
+        <MappingFragment StoreEntitySet="FAEL_PROVEEDORES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CODPROVEEDOR" ColumnName="CODPROVEEDOR" />
+          <ScalarProperty Name="RUC" ColumnName="RUC" />
+          <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,939 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BanBif | Empresas Banca por internet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Library/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="~/Library/css/animate.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="~/Library/css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="~/Library/font-awesome/css/all.min.css" rel="stylesheet">
+
+
+    <link href="~/Library/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Library/css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/Library/css/fonts/fonts.css">
+
+
+    <style type="text/css">
+        <!--
+        /* Tooltip */
+        .tooltip {
+            text-align: left !important;
+            margin-left: 15px;
+        }
+
+        .tooltip-inner {
+            text-align: left !important;
+            padding: 15px !important;
+            max-width: 300px !important;
+        }
+
+        .tooltip .tooltip-inner {
+            text-align: justify !important;
+            background-color: #20A3FF !important;
+        }
+
+        .tooltip.top .arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-top .arrow::before {
+            top: 0;
+            border-width: .4rem .4rem 0;
+            border-top-color: #20A3FF !important;
+        }
+
+        .bs-tooltip-bottom .arrow::before {
+            bottom: 0;
+            border-width: 0 .4rem .4rem;
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.top .tooltip-arrow {
+            border-top-color: #20A3FF !important;
+        }
+
+        .tooltip.right .tooltip-arrow {
+            border-right-color: #20A3FF !important;
+        }
+
+        .tooltip.bottom .tooltip-arrow {
+            border-bottom-color: #20A3FF !important;
+        }
+
+        .tooltip.left .tooltip-arrow {
+            border-left-color: #20A3FF !important;
+        }
+        -->
+    </style>
+
+</head>
+<body id="page-top" class="landing-page no-skin-config blue-bg">
+
+    <script>
+        function soloNumeros(e) {
+            var key = window.Event ? e.which : e.keyCode
+            return (key >= 48 && key <= 57)
+        }
+
+        function soloLetrasYNum(e) {
+
+            var key = window.Event ? e.which : e.keyCode
+            return ((key >= 48 && key <= 57) || (key >= 65 && key <= 90) || (key >= 97 && key <= 122))
+        }
+
+        function soloLetras(e) {
+            var key = window.Event ? e.which : e.keyCode
+            //Ñ = 209...241
+            return ((key >= 65 && key <= 90) || (key >= 97 && key <= 122) || key == 32);
+        }
+    </script>
+
+
+
+
+    <section id="testimonials" class=" navy-section testimonials shadow-lg " style="margin-top: 0; background-color:#20A3FF; padding-top:30px; background-image:none; padding-bottom: 0px">
+
+        <div class="container text-dark">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="~/Library/img/logo_banbif_blanco.png" height="35">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 text-white">
+                    <div>
+                        <!--
+                            <img class="hola" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_HOLA.png" style="margin-bottom: 15px;" alt="Hola" height="50">
+                            <br>
+                            -->
+
+                        <h1 class="fadeInUp" style="line-height:1; font-size:30px; margin-top:70px">
+
+                            <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">Banca</strong>
+                            <br>
+                            <small>
+                                <strong style="font-weight: 700; font-family: 'Produkt Reg', Helvetica, Arial, sans-serif;">
+                                    por Internet Empresas
+                                </strong>
+                            </small>
+                        </h1>
+                        <div class="m-t-lg m-b-lg ">
+                            <img class="ptos" src="https://www.banbif.com.pe/Portals/0/Images/Personas/Prestamos%20Personales/Prestamo%20Hipotecario/FIP/img_puntos.png" alt="puntos" height="12">
+                        </div>
+                        <div class="d-none d-sm-none d-md-block">
+                            <i class="fa fa-desktop fa-7x"></i>
+                            <i class="fa fa-laptop fa-5x"></i>
+                            <i class="fa fa-mobile-alt fa-3x"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp animated">
+                    <div id="inicio" class="text-white" style="font-family: Balto, Helvetica, Arialf; font-size:24px">
+                        Solicita reposición de tokens y claves
+                    </div>
+                    <div class="widget  white-bg dark-text shadow-sm p-xl  " style="border-radius: 15px">
+
+
+
+                        <div class="row m-t-sm">
+
+                            @*<?php
+                                for($i = 1; $i <= 3; $i++){
+                                $color = '#eeeeee';
+                                if($i <= $paso_actual)
+                                $color = '#20a3ff';
+                                ?>*@
+
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#20a3ff; border-bottom-width:5px">
+                                </div>
+                            </div>
+                            <div class="col-4" style="padding-left:3px; padding-right:3px">
+                                <div style="border-bottom-style:solid; border-bottom-color:#eeeeee; border-bottom-width:5px">
+                                </div>
+                            </div>
+
+                            @*<?php } ?>*@
+                        </div>
+
+
+                        <form action="javascript:Registrar()">
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <h2 class="text-success"><b>¿Qué necesitas?</b></h2>
+                                    <h5>Selecciona las opciones que necesites</h5>
+                                </div>
+                            </div>
+
+                         
+
+                            <div class="row m-t-md">
+                                <div class="col-lg-12">
+                                    <div id="divTokens">
+                                        <div class="row">
+                                            <div class="col-lg-12 m-b-md">
+                                                <input type="checkbox" id="chkAdicional" onchange="MostrarAdicional()" />
+                                                <span><b>Nuevo token para firmante adicional</b> <i class="fas fa-exclamation-circle" style="color:#20a3ff" onmouseover="$('#span1').show()" onmouseout="$('#span1').hide()"></i></span>
+                                                <span id="span1" style="display:none"><br />En caso requieras nuevos tokens para tus usuarios firmantes, te entregaremos un nuevo token y nueva clave de 4 dígitos. Costo por nuevo token $50.00. En caso cuentes con versión Consulta y adicionas un token. La versión migrará a Versión Full y su mantenimiento es de $40.00 mensuales.</span>
+                                                <select id="tokenadicional" class="form-control form-control-3 m-t-xs" onchange="CambiarMonto(this.value)" style="width:50%;display:none">
+                                                    <option value="0">seleccionar cantidad</option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 m-b-md">
+                                                <input type="checkbox" id="chkAdmin" onchange="AdicionarCosto(1)" />
+                                                <span><b>Reposición de token para usuario Administrador</b>
+                                                    <i class="fas fa-exclamation-circle" style="color:#20a3ff" onmouseover="$('#span4').show()" onmouseout="$('#span4').hide()"></i>
+                                                </span>
+                                                <span id="span4" style="display:none"><br />En caso de pérdida, robo o deterioro.  Costo: $50.00</span>                 
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 m-b-md">
+                                                <input type="checkbox" id="chkReposicion" onchange="MostrarReposicion()" />
+                                                <span><b>Reposición de token para usuario firmante</b> <i class="fas fa-exclamation-circle" style="color:#20a3ff" onmouseover="$('#span2').show()" onmouseout="$('#span2').hide()"></i></span>
+                                                <span id="span2" style="display:none"><br />En caso de pérdida, robo o deterioro. Costo: $50.00</span>
+                                                <div id="divMostrarReposicion" style="display:none">
+                                                    <input type="text" class="form-control form-control-3 m-t-xs" id="reposicion" style="width:50%" name="reposicion" value="" maxlength="10" autocomplete="off" onKeyPress="return soloLetrasYNum(event)" placeholder="Nro. de Serie Token o Usuario">
+                                                    <br />
+                                                    <div>
+                                                        <a href="" id="btnAgregarReposicion" onclick="AgregarReposicion(); return false" class="btn btn-success btn-outline btn-xs"><i class="fa fa-plus"></i> <b>Agregar</b></a>
+                                                    </div>                                                
+                                                </div>
+                                                <div id="divReposicion" style="display:none;padding-top:10px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="divCambio">
+                                        <div class="row">
+                                            <div class="col-lg-12 m-b-md">
+                                                <input type="checkbox" id="chkNuevo" onchange="MostrarNuevo()" />
+                                                <span><b>Nueva clave de 4 dígitos</b> <i class="fas fa-exclamation-circle" style="color:#20a3ff" onmouseover="$('#span3').show()" onmouseout="$('#span3').hide()"></i></span>
+                                                <span id="span3" style="display:none"><br />En caso hayas olvidado la clave de 4 dígitos asignada a tu token, te entregaremos una clave estática en un sobre cerrado. Costo: $0.00</span>
+                                                <div id="divNueva" style="display:none">
+                                                    <input type="text" class="form-control form-control-3 m-t-xs" id="nuevaclave" style="width:50%;" name="nuevaclave" value="" autocomplete="off" maxlength="10" onKeyPress="return soloLetrasYNum(event)" placeholder="Nro. de Serie Token o Usuario">
+                                                    <br />
+                                                    <div>
+                                                        <a href="" onclick="AgregarNuevaClave(); return false" class="btn btn-success btn-outline btn-xs"><i class="fa fa-plus"></i> <b>Agregar</b></a>
+                                                    </div>                                                
+                                                </div>
+                                                
+                                                <div id="divNuevaClave"  style="display:none;padding-top:10px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="divAnulaciones">
+                                        <div class="row">
+                                            <div class="col-lg-12 m-b-md">
+                                                <input type="checkbox" id="chkAnulacion" onchange="MostrarAnulacion()" />
+                                                <span><b>Anulación de Tokens</b></span>
+                                                <div id="divMostrarAnulacion" style="display:none">
+                                                    <input type="text" class="form-control form-control-3 m-t-xs" id="anulacion" style="width:50%" name="anulacion" value="" autocomplete="off" maxlength="10" onKeyPress="return soloLetrasYNum(event)" placeholder="Nro. de Serie Token o Usuario">
+                                                    <br />
+                                                    <div>
+                                                        <a href="" onclick="AgregarAnulacion(); return false" class="btn btn-success btn-outline btn-xs"><i class="fa fa-plus"></i> <b>Agregar</b></a>
+                                                    </div>                                                
+                                                </div>
+                                                
+                                                <div id="divAnulacion"  style="display:none;padding-top:10px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @*<div id="divAnulacionBanca">
+                                        <div class="row">
+                                            <div class="col-lg-8 m-b-md">
+                                                <span><b>Anular el servicio de la Banca por internet de empresas</b></span>
+                                                <ul>
+                                                    <li> <input type="checkbox" id="chkAnulacion"/> Si</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>*@
+                                    <hr  />
+                                    <div class="row">
+                                        <div class="col-lg-12 m-b-md" style="text-align:right">
+                                            <span><b>Monto a cobrar</b></span> : $ <div style="float:right; border-bottom:1px solid black; width:50px; text-align:left"><label id="montocobrar" style="margin-bottom:0px; margin-left:5px">0</label></div>
+                                            @*<input type="text" class="form-control form-control-3 m-t-xs" id="montocobrar" style="width:50%" name="montocobrar" value="0" autocomplete="off" disabled>*@
+                                        </div>
+
+                                        <div id="divCuentaCargo" style="display:none" class="col-lg-12 m-b-md">
+                                            
+                                                <span><b>Cuenta de cargo</b></span>     
+                                                <div >
+                                                    <div style="float:left; width:40%">
+                                                        <select id="cboTipMoneda" name="cboTipMoneda" class="form-control form-control-3">
+                                                            <option disabled="" selected="" value=""> -- Seleccionar moneda -- </option>
+                                                            <option value="MN">Soles (S/)</option>
+                                                            <option value="ME">Dólares (US$)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div style="float:left; width:60%">
+                                                        <input id="numero_cuenta" name="numero_cuenta" onKeyPress="return soloNumeros(event)" maxlength="12" type="text" class="form-control form-control-3" placeholder="Nro. de cuenta">                                        
+                                                    </div>                                                   
+                                                </div>
+                                                <div style="clear:both"></div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                
+
+                            <div class="row">
+                                <div class="col-lg-12 m-t-sm">
+                                    <a href="#" onclick="Atras()" class="btn btn-gray btn-xs">
+                                        <i class="fa fa-chevron-left"></i> Atrás
+                                    </a>
+                                    <button id="continuar" type="submit" class="btn btn-success btn-lg float-right">
+                                        Continuar <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                                
+
+
+
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="blue-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line" style="margin-top:25px; border-color: #ffffff"></div>
+                    <div class="m-t-sm">
+                        <p style="color: #ffffff !important"><b>BanBif</b> | Reinventa 2020</p>
+                    </div>
+                    <div class="navy-line" style="margin-top:-3px; margin-bottom:20px; border-color: #ffffff"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Mainly scripts -->
+    <script src="~/Library/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Library/js/popper.min.js"></script>
+    <script src="~/Library/js/bootstrap.js"></script>
+    <script src="~/Library/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Library/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="~/Library/js/inspinia.js"></script>
+    <script src="~/Library/js/plugins/pace/pace.min.js"></script>
+    <script src="~/Library/js/plugins/wow/wow.min.js"></script>
+
+    <!-- Jasny -->
+    <script src="~/Library/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+    <!-- DROPZONE -->
+    <script src="~/Library/js/plugins/dropzone/dropzone.js"></script>
+
+    <!-- iCheck -->
+    <script src="~/Library/js/plugins/iCheck/icheck.min.js"></script>
+
+    <script>
+       
+        $(document).ready(function () {
+
+            /*deshabilitar formulario*/
+            $('#tokenadicional').prop('disabled', true);
+            $('#reposicion').prop('disabled', true);
+            $('#btnAgregarReposicion').prop('disabled', true);
+            $('#nuevaclave').prop('disabled', true);
+            $('#anulacion').prop('disabled', true);
+            
+
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 80
+            });
+
+            function SmoothScrollTo(id_or_Name, timelength) {
+                var timelength = timelength || 1000;
+                $('html, body').animate({
+                    scrollTop: $(id_or_Name).offset().top
+                }, timelength, function () {
+                    window.location.hash = id_or_Name;
+                });
+            }
+
+            if (screen.width <= 500) {
+                SmoothScrollTo("#inicio", 1000);
+            }
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            });
+
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function (event) {
+                var link = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(link.attr('href')).offset().top - 50
+                }, 500);
+                event.preventDefault();
+                $("#navbar").collapse('hide');
+            });
+
+
+            /*CARGAR DATOS*/
+            if (sessionStorage.CODIGOREGISTRO != null && sessionStorage.PAGTOKEN == "1") {
+
+                /*REPRESENTANTES*/
+                var objRequest = {};
+                objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+
+                $.ajax({
+                    url: sessionStorage.APP + "/Token/Obtener",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    processData: true,
+                    data: JSON.stringify(objRequest),
+                    success: function (resp) {
+                        console.log(resp);
+                        if (resp.result) {
+                            if (resp.data.tokenfisico != null && resp.data.tokenfisico > 0) {
+                                $('#chkAdicional').click();
+                                $('#tokenadicional').val(resp.data.tokenfisico);
+                                CalcularMonto();
+                            }
+
+                            if (resp.data.tokenadmin == true) {
+                                $('#chkAdmin').click();
+                            }
+
+                            if (resp.data.reposicion.length > 0) {
+                                $('#chkReposicion').click();
+                                $.each(resp.data.reposicion, function (index, item) {
+                                    listaReposicion.push({ 'token': item.token, 'estado': 1 });
+                                });
+                                CargarReposicion()
+                            }
+
+                            if (resp.data.nuevaclave.length > 0) {
+                                $('#chkNuevo').click();
+                                $.each(resp.data.nuevaclave, function (index, item) {
+                                    listaNuevaClave.push({ 'token': item.token, 'estado': 1 });
+                                });
+                                CargarNuevaClave()
+                            }
+
+                            if (resp.data.anulacion.length > 0) {
+                                $('#chkAnulacion').click();
+                                $.each(resp.data.anulacion, function (index, item) {
+                                    listaAnulacion.push({ 'token': item.token, 'estado': 1 });
+                                });
+                                CargarAnulacion()
+                            }
+                            
+                            $('#cboTipMoneda').val(resp.data.moneda);
+                            $('#numero_cuenta').val(resp.data.cuentacargo);
+                            
+                            
+                        }
+                    }
+                });
+            }
+
+
+
+        });
+
+        var cbpAnimatedHeader = (function () {
+            var docElem = document.documentElement,
+                    header = document.querySelector('.navbar-default'),
+                    didScroll = false,
+                    changeHeaderOn = 200;
+            function init() {
+                window.addEventListener('scroll', function (event) {
+                    if (!didScroll) {
+                        didScroll = true;
+                        setTimeout(scrollPage, 250);
+                    }
+                }, false);
+            }
+            function scrollPage() {
+                var sy = scrollY();
+                if (sy >= changeHeaderOn) {
+                    $(header).addClass('navbar-scroll')
+                }
+                else {
+                    $(header).removeClass('navbar-scroll')
+                }
+                didScroll = false;
+            }
+            function scrollY() {
+                return window.pageYOffset || docElem.scrollTop;
+            }
+            init();
+
+        })();
+
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+
+    </script>
+
+
+
+
+
+    <script>
+        var showadicional = 0;
+        var showreposicion = 0;
+        var shownuevo = 0;
+        var showanulacion = 0;
+
+        function MostrarAdicional() {
+            if (showadicional == 0) {
+                // mostrar
+                $('#tokenadicional').show();
+                $('#tokenadicional').prop('disabled', false);
+                showadicional = 1;
+            } else {
+                // ocultar
+                $('#tokenadicional').hide();
+                $('#tokenadicional').prop('disabled', true);
+                $('#tokenadicional').val('0');
+                showadicional = 0;
+            }
+            CalcularMonto();
+
+        }
+
+        function MostrarReposicion() {
+            if (showreposicion == 0) {
+                // mostrar                
+                $('#divMostrarReposicion').show();
+                $('#reposicion').prop('disabled', false);
+                showreposicion = 1;
+            } else {
+                // ocultar
+                $('#divMostrarReposicion').hide();
+                $('#reposicion').prop('disabled', true);
+                $('#reposicion').val('');
+                showreposicion = 0;
+
+                listaReposicion = [];
+            }
+            CargarReposicion();         
+        }
+
+        function MostrarNuevo() {
+            if (shownuevo == 0) {
+                // mostrar
+                $('#divNueva').show();
+                $('#nuevaclave').prop('disabled', false);
+                shownuevo = 1;
+            } else {
+                // ocultar
+                $('#divNueva').hide();
+                $('#nuevaclave').prop('disabled', true);
+                $('#nuevaclave').val('');
+                shownuevo = 0;
+
+                listaNuevaClave = [];
+            }
+            CargarNuevaClave();
+        }
+
+        function MostrarAnulacion() {
+            if (showanulacion == 0) {
+                // mostrar
+                $('#divMostrarAnulacion').show();
+                $('#anulacion').prop('disabled', false);
+                showanulacion = 1;
+            } else {
+                // ocultar
+                $('#divMostrarAnulacion').hide();
+                $('#anulacion').prop('disabled', true);
+                $('#anulacion').val('');
+                showanulacion = 0;
+
+                listaAnulacion = [];
+            }
+            CargarAnulacion();
+        }
+
+        function CalcularMonto() {
+            var monto = 0;
+            if ($('#chkAdmin').prop('checked')) {
+                monto += 50;
+            }
+
+            if ($('#chkAdicional').prop('checked')) {
+                var cantidad = $('#tokenadicional').val();
+                monto += (50 * parseInt(cantidad));
+            }
+            
+            var cont = 0;
+            $.each(listaReposicion, function (index, item) {
+                if (item.estado == 1) {
+                    cont += 1;
+                }
+            });
+
+            monto += (50 * cont);
+
+
+            $('#montocobrar').text(monto);
+
+            if (monto > 0) {
+                $('#divCuentaCargo').show();
+            } else {
+                $('#divCuentaCargo').hide();
+            }
+        }
+
+        function AdicionarCosto(opc) {
+            var monto = $('#montocobrar').text();
+            if (opc == 1) {
+                if ($('#chkAdmin').prop('checked')) {
+                    monto = parseInt(monto) + 50;
+                } else {
+                    monto = parseInt(monto) - 50
+                }
+            } 
+            
+            $('#montocobrar').text(monto);
+
+            if (monto > 0) {
+                $('#divCuentaCargo').show();
+            } else {
+                $('#divCuentaCargo').hide();
+            }
+        }
+
+
+        function CambiarMonto(nro) {
+            CalcularMonto();
+        }
+
+        var listaReposicion = [];
+        function AgregarReposicion() {
+            var token = $('#reposicion').val();
+            if (token == "") return false;
+
+            listaReposicion.push({'token':token, 'estado': 1});
+            CargarReposicion()
+            
+        }
+
+        function EliminarReposicion(idx) {
+            $.each(listaReposicion, function (index, item) {
+                if (index == idx) {
+                    item.estado = 2;
+                }
+            });
+
+            CargarReposicion();
+        }
+
+        function CargarReposicion() {
+            var cont = 0;
+            var html = '<ul>';
+            $.each(listaReposicion, function (index, item) {
+                if (item.estado == 1) {
+                    cont += 1;
+                    html += '<li>' + item.token + ' - <a href="#" onclick="EliminarReposicion(' + index + ')">Eliminar</a></li>';                    
+                }
+            });
+
+            html += '</ul>';
+            $('#divReposicion').html(html);
+            if (cont > 0) {                
+                $('#divReposicion').show();
+            } else {
+                $('#divReposicion').hide();
+            }
+            
+            $('#reposicion').val("");
+            CalcularMonto();
+        }
+
+        
+        var listaNuevaClave = [];
+        function AgregarNuevaClave() {
+            var token = $('#nuevaclave').val();
+            if (token == "") return false;
+
+            listaNuevaClave.push({ 'token': token, 'estado': 1 });
+            CargarNuevaClave()
+
+        }
+
+        function EliminarNuevaClave(idx) {
+            $.each(listaNuevaClave, function (index, item) {
+                if (index == idx) {
+                    item.estado = 2;
+                }
+            });
+
+            CargarNuevaClave();
+        }
+
+        function CargarNuevaClave() {
+            var cont = 0;
+            var html = '<ul>';
+            $.each(listaNuevaClave, function (index, item) {
+                if (item.estado == 1) {
+                    cont += 1;
+                    html += '<li>' + item.token + ' - <a href="#" onclick="EliminarNuevaClave(' + index + ')">Eliminar</a></li>';
+                }
+            });
+            html += '</ul>';
+            
+            $('#divNuevaClave').html(html);
+
+            if (cont > 0) {
+                $('#divNuevaClave').show();
+            } else {
+                $('#divNuevaClave').hide();
+            }
+
+            $('#nuevaclave').val("");
+        }
+
+        var listaAnulacion = [];
+        function AgregarAnulacion() {
+            var token = $('#anulacion').val();
+            if (token == "") return false;
+
+            listaAnulacion.push({ 'token': token, 'estado': 1 });
+            CargarAnulacion()
+
+        }
+
+        function EliminarAnulacion(idx) {
+            $.each(listaAnulacion, function (index, item) {
+                if (index == idx) {
+                    item.estado = 2;
+                }
+            });
+
+            CargarAnulacion();
+        }
+
+        function CargarAnulacion() {
+            var cont = 0;
+            var html = '<ul>';
+            $.each(listaAnulacion, function (index, item) {
+                if (item.estado == 1) {
+                    cont += 1;
+                    html += '<li>' + item.token + ' - <a href="#" onclick="EliminarAnulacion(' + index + ')">Eliminar</a></li>';
+                }
+            });
+            html += '</ul>';
+
+            $('#divAnulacion').html(html);
+
+            if (cont > 0) {
+                $('#divAnulacion').show();
+            } else {
+                $('#divAnulacion').hide();
+            }
+
+            $('#anulacion').val("");
+        }
+
+
+        function Registrar() {
+
+            var cont = 0;
+            var tokenadmin = "NO";
+            if ($('#chkAdmin').prop('checked')) {
+                cont += 1;
+                tokenadmin = "SI";
+            }
+
+            var cantidad = $('#tokenadicional').val();
+            cont +=  parseInt(cantidad);
+
+            $.each(listaReposicion, function (index, item) {
+                if (item.estado == 1) {
+                    cont += 1;
+                }
+            });
+
+
+            if (cont > 0) {
+                var validacion = 0;
+                if ($('#cboTipMoneda').val() == "") {
+                    validacion = 1;
+                }
+
+                if ($('#numero_cuenta').val() == "") {
+                    validacion = 1;
+                }
+
+                if (validacion == 1) {
+                    alert("Debe completar los campos de Cuenta de cargo.");
+                    return false;
+                }
+            }
+            
+            //var anulacionBanca = $('#chkAnulacion').prop('checked');
+
+            var objRequest = {};
+            objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+            objRequest.tokenfisico = $('#tokenadicional').val();
+            objRequest.monedacargo = $('#cboTipMoneda').val();
+            objRequest.cuentacargo = $('#numero_cuenta').val();
+            //objRequest.estado = anulacionBanca ? 1 : 0;
+            objRequest.tokenadmin = tokenadmin;
+            objRequest.reposicion = listaReposicion;
+            objRequest.nuevaclave = listaNuevaClave;
+            objRequest.anulacion = listaAnulacion;
+           
+            
+            $.ajax({
+                url: sessionStorage.APP + "/Token/Actualizar",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    console.log(resp);
+                    if (resp.result) {
+                        window.location.href = sessionStorage.APP + "/DatosEntrega";
+                    }
+                }
+            });
+        }
+
+        function Atras() {
+            var cont = 0;
+            var tokenadmin = "NO";
+            if ($('#chkAdmin').prop('checked')) {
+                cont += 1;
+                tokenadmin = "SI";
+            }
+
+            var cantidad = $('#tokenadicional').val();
+            cont += parseInt(cantidad);
+
+            $.each(listaReposicion, function (index, item) {
+                if (item.estado == 1) {
+                    cont += 1;
+                }
+            });
+
+
+            if (cont > 0) {
+                var validacion = 0;
+                if ($('#cboTipMoneda').val() == "") {
+                    validacion = 1;
+                }
+
+                if ($('#numero_cuenta').val() == "") {
+                    validacion = 1;
+                }
+
+                if (validacion == 1) {
+                    alert("Debe completar los campos de Cuenta de cargo.");
+                    return false;
+                }
+            }
+
+            //var anulacionBanca = $('#chkAnulacion').prop('checked');
+
+            var objRequest = {};
+            objRequest.codigoregistro = sessionStorage.CODIGOREGISTRO;
+            objRequest.tokenfisico = $('#tokenadicional').val();
+            objRequest.monedacargo = $('#cboTipMoneda').val();
+            objRequest.cuentacargo = $('#numero_cuenta').val();
+            //objRequest.estado = anulacionBanca ? 1 : 0;
+            objRequest.tokenadmin = tokenadmin;
+            objRequest.reposicion = listaReposicion;
+            objRequest.nuevaclave = listaNuevaClave;
+            objRequest.anulacion = listaAnulacion;
+
+
+            $.ajax({
+                url: sessionStorage.APP + "/Token/Actualizar",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                processData: true,
+                data: JSON.stringify(objRequest),
+                success: function (resp) {
+                    if (resp.result) {
+                        sessionStorage.setItem("PAGTOKEN", "1");
+                        window.location.href = sessionStorage.APP + "/Home";
+                    }
+                }
+            });
+        }
+        
+    </script>
+
+</body>
+</html>

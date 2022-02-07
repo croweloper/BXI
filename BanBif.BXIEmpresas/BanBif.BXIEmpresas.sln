@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanBif.BXIEmpresas.APP", "BanBif.BXIEmpresas.APP\BanBif.BXIEmpresas.APP.csproj", "{15ACAA07-5446-4E8F-8DF4-4B49B6794589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanBif.BXIEmpresas.DA", "BanBif.BXIEmpresas.DA\BanBif.BXIEmpresas.DA.csproj", "{910BDED9-6DBA-48AC-94DC-A0E8528B8527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanBif.BXIEmpresas.BE", "BanBif.BXIEmpresas.BE\BanBif.BXIEmpresas.BE.csproj", "{467D9F93-65F9-4C31-9FB9-2EE7130DCB46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanBif.BXIEmpresas.BL", "BanBif.BXIEmpresas.BL\BanBif.BXIEmpresas.BL.csproj", "{8E207807-E447-47C5-9C6D-C4EE477DC11C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanBif.BXIEmpresas.API", "BanBif.BXIEmpresas.API\BanBif.BXIEmpresas.API.csproj", "{B7847415-AEC6-4398-8D32-FF8D659137EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanBif.BXIEmpresas.Mod.APP", "BanBif.BXIEmpresas.Mod.APP\BanBif.BXIEmpresas.Mod.APP.csproj", "{797299E9-D40E-448D-B801-4E9220635D85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15ACAA07-5446-4E8F-8DF4-4B49B6794589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15ACAA07-5446-4E8F-8DF4-4B49B6794589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15ACAA07-5446-4E8F-8DF4-4B49B6794589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15ACAA07-5446-4E8F-8DF4-4B49B6794589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{910BDED9-6DBA-48AC-94DC-A0E8528B8527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910BDED9-6DBA-48AC-94DC-A0E8528B8527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910BDED9-6DBA-48AC-94DC-A0E8528B8527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910BDED9-6DBA-48AC-94DC-A0E8528B8527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467D9F93-65F9-4C31-9FB9-2EE7130DCB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467D9F93-65F9-4C31-9FB9-2EE7130DCB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467D9F93-65F9-4C31-9FB9-2EE7130DCB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467D9F93-65F9-4C31-9FB9-2EE7130DCB46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E207807-E447-47C5-9C6D-C4EE477DC11C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E207807-E447-47C5-9C6D-C4EE477DC11C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E207807-E447-47C5-9C6D-C4EE477DC11C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E207807-E447-47C5-9C6D-C4EE477DC11C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7847415-AEC6-4398-8D32-FF8D659137EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7847415-AEC6-4398-8D32-FF8D659137EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7847415-AEC6-4398-8D32-FF8D659137EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7847415-AEC6-4398-8D32-FF8D659137EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797299E9-D40E-448D-B801-4E9220635D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797299E9-D40E-448D-B801-4E9220635D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797299E9-D40E-448D-B801-4E9220635D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797299E9-D40E-448D-B801-4E9220635D85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/banbif
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BanBif.BXIEmpresas.API\\BanBif.BXIEmpresas.API.csproj
+		SccProjectName1 = BanBif.BXIEmpresas.API
+		SccLocalPath1 = BanBif.BXIEmpresas.API
+		SccProjectUniqueName2 = BanBif.BXIEmpresas.APP\\BanBif.BXIEmpresas.APP.csproj
+		SccProjectName2 = BanBif.BXIEmpresas.APP
+		SccLocalPath2 = BanBif.BXIEmpresas.APP
+		SccProjectUniqueName3 = BanBif.BXIEmpresas.BE\\BanBif.BXIEmpresas.BE.csproj
+		SccProjectName3 = BanBif.BXIEmpresas.BE
+		SccLocalPath3 = BanBif.BXIEmpresas.BE
+		SccProjectUniqueName4 = BanBif.BXIEmpresas.BL\\BanBif.BXIEmpresas.BL.csproj
+		SccProjectName4 = BanBif.BXIEmpresas.BL
+		SccLocalPath4 = BanBif.BXIEmpresas.BL
+		SccProjectUniqueName5 = BanBif.BXIEmpresas.DA\\BanBif.BXIEmpresas.DA.csproj
+		SccProjectName5 = BanBif.BXIEmpresas.DA
+		SccLocalPath5 = BanBif.BXIEmpresas.DA
+		SccProjectUniqueName6 = BanBif.BXIEmpresas.Mod.APP\\BanBif.BXIEmpresas.Mod.APP.csproj
+		SccProjectName6 = BanBif.BXIEmpresas.Mod.APP
+		SccLocalPath6 = BanBif.BXIEmpresas.Mod.APP
+	EndGlobalSection
+EndGlobal

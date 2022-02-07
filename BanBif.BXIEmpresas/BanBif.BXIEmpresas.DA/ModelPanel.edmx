@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="panelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BPI_EMPRESAS_autorizados">
+          <Key>
+            <PropertyRef Name="idautorizado" />
+          </Key>
+          <Property Name="idautorizado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idregistro" Type="int" />
+          <Property Name="nombre" Type="varchar" MaxLength="255" />
+          <Property Name="tipo_documento" Type="int" />
+          <Property Name="documento" Type="varchar" MaxLength="20" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+          <Property Name="Telefono" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_dato">
+          <Key>
+            <PropertyRef Name="iddato" />
+          </Key>
+          <Property Name="iddato" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dato" Type="varchar" MaxLength="255" />
+          <Property Name="texto1" Type="varchar" MaxLength="255" />
+          <Property Name="valor1" Type="int" />
+          <Property Name="decimal1" Type="int" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_autorizados">
+          <Key>
+            <PropertyRef Name="idautorizado" />
+          </Key>
+          <Property Name="idautorizado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idregistro" Type="int" />
+          <Property Name="nombre" Type="varchar" MaxLength="255" />
+          <Property Name="tipo_documento" Type="int" />
+          <Property Name="documento" Type="varchar" MaxLength="20" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+          <Property Name="Telefono" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_registro">
+          <Key>
+            <PropertyRef Name="idregistro" />
+          </Key>
+          <Property Name="idregistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ruc" Type="varchar" MaxLength="20" />
+          <Property Name="razon_social" Type="varchar" MaxLength="511" />
+          <Property Name="telefono" Type="varchar" MaxLength="20" />
+          <Property Name="direccion" Type="varchar" MaxLength="511" />
+          <Property Name="ip" Type="varchar" MaxLength="20" />
+          <Property Name="version" Type="int" />
+          <Property Name="moneda_cargo" Type="varchar" MaxLength="10" />
+          <Property Name="cuenta_cargo" Type="varchar" MaxLength="20" />
+          <Property Name="entidad" Type="varchar" MaxLength="255" />
+          <Property Name="firmantes" Type="int" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+          <Property Name="codoficina" Type="varchar" MaxLength="10" />
+          <Property Name="token_fisico" Type="int" />
+          <Property Name="token_digital" Type="int" />
+          <Property Name="usuario_administrador" Type="varchar" MaxLength="20" />
+          <Property Name="dni_administrador" Type="varchar" MaxLength="20" />
+          <Property Name="nombre_administrador" Type="varchar" MaxLength="200" />
+          <Property Name="email_administrador" Type="varchar" MaxLength="200" />
+          <Property Name="telefono_administrador" Type="varchar" MaxLength="20" />
+          <Property Name="token" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_representante">
+          <Key>
+            <PropertyRef Name="idrepresentante" />
+          </Key>
+          <Property Name="idrepresentante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idregistro" Type="int" />
+          <Property Name="nombre" Type="varchar" MaxLength="255" />
+          <Property Name="tipo_documento" Type="int" />
+          <Property Name="documento" Type="varchar" MaxLength="20" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_token">
+          <Key>
+            <PropertyRef Name="idtoken" />
+          </Key>
+          <Property Name="idtoken" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idregistro" Type="int" />
+          <Property Name="token_usuario" Type="varchar" MaxLength="10" />
+          <Property Name="tipo" Type="int" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_registro">
+          <Key>
+            <PropertyRef Name="idregistro" />
+          </Key>
+          <Property Name="idregistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ruc" Type="varchar" MaxLength="20" />
+          <Property Name="razon_social" Type="varchar" MaxLength="511" />
+          <Property Name="telefono" Type="varchar" MaxLength="20" />
+          <Property Name="direccion" Type="varchar" MaxLength="511" />
+          <Property Name="ip" Type="varchar" MaxLength="20" />
+          <Property Name="version" Type="int" />
+          <Property Name="moneda_cargo" Type="varchar" MaxLength="10" />
+          <Property Name="cuenta_cargo" Type="varchar" MaxLength="20" />
+          <Property Name="entidad" Type="varchar" MaxLength="255" />
+          <Property Name="firmantes" Type="int" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+          <Property Name="codoficina" Type="varchar" MaxLength="10" />
+          <Property Name="token_fisico" Type="int" />
+          <Property Name="token_digital" Type="int" />
+          <Property Name="usuario_administrador" Type="varchar" MaxLength="20" />
+          <Property Name="dni_administrador" Type="varchar" MaxLength="20" />
+          <Property Name="nombre_administrador" Type="varchar" MaxLength="200" />
+          <Property Name="email_administrador" Type="varchar" MaxLength="200" />
+          <Property Name="telefono_administrador" Type="varchar" MaxLength="20" />
+          <Property Name="token" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_representante">
+          <Key>
+            <PropertyRef Name="idrepresentante" />
+          </Key>
+          <Property Name="idrepresentante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idregistro" Type="int" />
+          <Property Name="nombre" Type="varchar" MaxLength="255" />
+          <Property Name="tipo_documento" Type="int" />
+          <Property Name="documento" Type="varchar" MaxLength="20" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_token">
+          <Key>
+            <PropertyRef Name="idtoken" />
+          </Key>
+          <Property Name="idtoken" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idregistro" Type="int" />
+          <Property Name="token" Type="int" />
+          <Property Name="tipo" Type="int" />
+          <Property Name="f_registro" Type="datetime" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <Function Name="SP_BPI_EMPRESAS_OFICINAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="REGION" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="panelModelStoreContainer">
+          <EntitySet Name="BPI_EMPRESAS_autorizados" EntityType="Self.BPI_EMPRESAS_autorizados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_dato" EntityType="Self.BPI_EMPRESAS_dato" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_autorizados" EntityType="Self.BPI_EMPRESAS_MOD_autorizados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_registro" EntityType="Self.BPI_EMPRESAS_MOD_registro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_representante" EntityType="Self.BPI_EMPRESAS_MOD_representante" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_token" EntityType="Self.BPI_EMPRESAS_MOD_token" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_registro" EntityType="Self.BPI_EMPRESAS_registro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_representante" EntityType="Self.BPI_EMPRESAS_representante" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BPI_EMPRESAS_token" EntityType="Self.BPI_EMPRESAS_token" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="panelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="panelEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BPI_EMPRESAS_representante" EntityType="panelModel.BPI_EMPRESAS_representante" />
+          <EntitySet Name="BPI_EMPRESAS_dato" EntityType="panelModel.BPI_EMPRESAS_dato" />
+          <EntitySet Name="BPI_EMPRESAS_token" EntityType="panelModel.BPI_EMPRESAS_token" />
+          <FunctionImport Name="SP_BPI_EMPRESAS_OFICINAS" ReturnType="Collection(panelModel.SP_BPI_EMPRESAS_OFICINAS_Result)">
+          <Parameter Name="REGION" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="BPI_EMPRESAS_autorizados" EntityType="panelModel.BPI_EMPRESAS_autorizados" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_representante" EntityType="panelModel.BPI_EMPRESAS_MOD_representante" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_autorizados" EntityType="panelModel.BPI_EMPRESAS_MOD_autorizados" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_token" EntityType="panelModel.BPI_EMPRESAS_MOD_token" />
+          <EntitySet Name="BPI_EMPRESAS_registro" EntityType="panelModel.BPI_EMPRESAS_registro" />
+          <EntitySet Name="BPI_EMPRESAS_MOD_registro" EntityType="panelModel.BPI_EMPRESAS_MOD_registro" />
+        </EntityContainer>
+        <EntityType Name="BPI_EMPRESAS_representante">
+          <Key>
+            <PropertyRef Name="idrepresentante" />
+          </Key>
+          <Property Name="idrepresentante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idregistro" Type="Int32" />
+          <Property Name="nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tipo_documento" Type="Int32" />
+          <Property Name="documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_dato">
+          <Key>
+            <PropertyRef Name="iddato" />
+          </Key>
+          <Property Name="iddato" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dato" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="texto1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="valor1" Type="Int32" />
+          <Property Name="decimal1" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_token">
+          <Key>
+            <PropertyRef Name="idtoken" />
+          </Key>
+          <Property Name="idtoken" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idregistro" Type="Int32" />
+          <Property Name="token" Type="Int32" />
+          <Property Name="tipo" Type="Int32" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+        </EntityType>
+        <ComplexType Name="SP_BPI_EMPRESAS_OFICINAS_Result">
+          <Property Type="Int32" Name="idoficina" Nullable="false" />
+          <Property Type="String" Name="codoficina" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="oficina" Nullable="true" MaxLength="511" />
+          <Property Type="String" Name="zona" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="horario1" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="horario2" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="horario3" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="horario4" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="telefono" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="direccion" Nullable="true" MaxLength="511" />
+          <Property Type="String" Name="ubidepa" Nullable="true" MaxLength="2" />
+          <Property Type="String" Name="ubiprov" Nullable="true" MaxLength="4" />
+          <Property Type="String" Name="ubidist" Nullable="true" MaxLength="6" />
+          <Property Type="String" Name="region" Nullable="true" MaxLength="10" />
+          <Property Type="Decimal" Name="latitud" Nullable="true" Precision="10" Scale="8" />
+          <Property Type="Decimal" Name="longitud" Nullable="true" Precision="10" Scale="8" />
+          <Property Type="Int32" Name="status" Nullable="true" />
+          <Property Type="String" Name="departamento" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="provincia" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="distrito" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <EntityType Name="BPI_EMPRESAS_autorizados">
+          <Key>
+            <PropertyRef Name="idautorizado" />
+          </Key>
+          <Property Name="idautorizado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idregistro" Type="Int32" />
+          <Property Name="nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tipo_documento" Type="Int32" />
+          <Property Name="documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_representante">
+          <Key>
+            <PropertyRef Name="idrepresentante" />
+          </Key>
+          <Property Name="idrepresentante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idregistro" Type="Int32" />
+          <Property Name="nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tipo_documento" Type="Int32" />
+          <Property Name="documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_autorizados">
+          <Key>
+            <PropertyRef Name="idautorizado" />
+          </Key>
+          <Property Name="idautorizado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idregistro" Type="Int32" />
+          <Property Name="nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tipo_documento" Type="Int32" />
+          <Property Name="documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_token">
+          <Key>
+            <PropertyRef Name="idtoken" />
+          </Key>
+          <Property Name="idtoken" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idregistro" Type="Int32" />
+          <Property Name="token_usuario" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="tipo" Type="Int32" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_registro">
+          <Key>
+            <PropertyRef Name="idregistro" />
+          </Key>
+          <Property Name="idregistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ruc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="razon_social" Type="String" MaxLength="511" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="direccion" Type="String" MaxLength="511" FixedLength="false" Unicode="false" />
+          <Property Name="ip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="moneda_cargo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="cuenta_cargo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="entidad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="firmantes" Type="Int32" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="codoficina" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="token_fisico" Type="Int32" />
+          <Property Name="token_digital" Type="Int32" />
+          <Property Name="usuario_administrador" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="dni_administrador" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="nombre_administrador" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="email_administrador" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="telefono_administrador" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="token" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="BPI_EMPRESAS_MOD_registro">
+          <Key>
+            <PropertyRef Name="idregistro" />
+          </Key>
+          <Property Name="idregistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ruc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="razon_social" Type="String" MaxLength="511" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="direccion" Type="String" MaxLength="511" FixedLength="false" Unicode="false" />
+          <Property Name="ip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="moneda_cargo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="cuenta_cargo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="entidad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="firmantes" Type="Int32" />
+          <Property Name="f_registro" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="codoficina" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="token_fisico" Type="Int32" />
+          <Property Name="token_digital" Type="Int32" />
+          <Property Name="usuario_administrador" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="dni_administrador" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="nombre_administrador" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="email_administrador" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="telefono_administrador" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="token" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="panelModelStoreContainer" CdmEntityContainer="panelEntities">
+          <EntitySetMapping Name="BPI_EMPRESAS_representante">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_representante">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_representante">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+                <ScalarProperty Name="idrepresentante" ColumnName="idrepresentante" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_dato">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_dato">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_dato">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="decimal1" ColumnName="decimal1" />
+                <ScalarProperty Name="valor1" ColumnName="valor1" />
+                <ScalarProperty Name="texto1" ColumnName="texto1" />
+                <ScalarProperty Name="dato" ColumnName="dato" />
+                <ScalarProperty Name="iddato" ColumnName="iddato" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_token">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_token">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_token">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="token" ColumnName="token" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+                <ScalarProperty Name="idtoken" ColumnName="idtoken" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_BPI_EMPRESAS_OFICINAS" FunctionName="panelModel.Store.SP_BPI_EMPRESAS_OFICINAS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="panelModel.SP_BPI_EMPRESAS_OFICINAS_Result">
+                <ScalarProperty Name="idoficina" ColumnName="idoficina" />
+                <ScalarProperty Name="codoficina" ColumnName="codoficina" />
+                <ScalarProperty Name="oficina" ColumnName="oficina" />
+                <ScalarProperty Name="zona" ColumnName="zona" />
+                <ScalarProperty Name="horario1" ColumnName="horario1" />
+                <ScalarProperty Name="horario2" ColumnName="horario2" />
+                <ScalarProperty Name="horario3" ColumnName="horario3" />
+                <ScalarProperty Name="horario4" ColumnName="horario4" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="ubidepa" ColumnName="ubidepa" />
+                <ScalarProperty Name="ubiprov" ColumnName="ubiprov" />
+                <ScalarProperty Name="ubidist" ColumnName="ubidist" />
+                <ScalarProperty Name="region" ColumnName="region" />
+                <ScalarProperty Name="latitud" ColumnName="latitud" />
+                <ScalarProperty Name="longitud" ColumnName="longitud" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="departamento" ColumnName="departamento" />
+                <ScalarProperty Name="provincia" ColumnName="provincia" />
+                <ScalarProperty Name="distrito" ColumnName="distrito" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_autorizados">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_autorizados">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_autorizados">
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+                <ScalarProperty Name="idautorizado" ColumnName="idautorizado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_MOD_representante">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_representante">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_representante">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+                <ScalarProperty Name="idrepresentante" ColumnName="idrepresentante" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_MOD_autorizados">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_autorizados">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_autorizados">
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+                <ScalarProperty Name="idautorizado" ColumnName="idautorizado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_MOD_token">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_token">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_token">
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="token_usuario" ColumnName="token_usuario" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+                <ScalarProperty Name="idtoken" ColumnName="idtoken" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_registro">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_registro">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_registro">
+                <ScalarProperty Name="token" ColumnName="token" />
+                <ScalarProperty Name="telefono_administrador" ColumnName="telefono_administrador" />
+                <ScalarProperty Name="email_administrador" ColumnName="email_administrador" />
+                <ScalarProperty Name="nombre_administrador" ColumnName="nombre_administrador" />
+                <ScalarProperty Name="dni_administrador" ColumnName="dni_administrador" />
+                <ScalarProperty Name="usuario_administrador" ColumnName="usuario_administrador" />
+                <ScalarProperty Name="token_digital" ColumnName="token_digital" />
+                <ScalarProperty Name="token_fisico" ColumnName="token_fisico" />
+                <ScalarProperty Name="codoficina" ColumnName="codoficina" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="firmantes" ColumnName="firmantes" />
+                <ScalarProperty Name="entidad" ColumnName="entidad" />
+                <ScalarProperty Name="cuenta_cargo" ColumnName="cuenta_cargo" />
+                <ScalarProperty Name="moneda_cargo" ColumnName="moneda_cargo" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="ip" ColumnName="ip" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+                <ScalarProperty Name="ruc" ColumnName="ruc" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BPI_EMPRESAS_MOD_registro">
+            <EntityTypeMapping TypeName="panelModel.BPI_EMPRESAS_MOD_registro">
+              <MappingFragment StoreEntitySet="BPI_EMPRESAS_MOD_registro">
+                <ScalarProperty Name="token" ColumnName="token" />
+                <ScalarProperty Name="telefono_administrador" ColumnName="telefono_administrador" />
+                <ScalarProperty Name="email_administrador" ColumnName="email_administrador" />
+                <ScalarProperty Name="nombre_administrador" ColumnName="nombre_administrador" />
+                <ScalarProperty Name="dni_administrador" ColumnName="dni_administrador" />
+                <ScalarProperty Name="usuario_administrador" ColumnName="usuario_administrador" />
+                <ScalarProperty Name="token_digital" ColumnName="token_digital" />
+                <ScalarProperty Name="token_fisico" ColumnName="token_fisico" />
+                <ScalarProperty Name="codoficina" ColumnName="codoficina" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="f_registro" ColumnName="f_registro" />
+                <ScalarProperty Name="firmantes" ColumnName="firmantes" />
+                <ScalarProperty Name="entidad" ColumnName="entidad" />
+                <ScalarProperty Name="cuenta_cargo" ColumnName="cuenta_cargo" />
+                <ScalarProperty Name="moneda_cargo" ColumnName="moneda_cargo" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="ip" ColumnName="ip" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+                <ScalarProperty Name="ruc" ColumnName="ruc" />
+                <ScalarProperty Name="idregistro" ColumnName="idregistro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

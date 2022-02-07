@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="panelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BPI_EMPRESAS_autorizados">
+    <Key>
+      <PropertyRef Name="idautorizado" />
+    </Key>
+    <Property Name="idautorizado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idregistro" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="255" />
+    <Property Name="tipo_documento" Type="int" />
+    <Property Name="documento" Type="varchar" MaxLength="20" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_dato">
+    <Key>
+      <PropertyRef Name="iddato" />
+    </Key>
+    <Property Name="iddato" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dato" Type="varchar" MaxLength="255" />
+    <Property Name="texto1" Type="varchar" MaxLength="255" />
+    <Property Name="valor1" Type="int" />
+    <Property Name="decimal1" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_MOD_autorizados">
+    <Key>
+      <PropertyRef Name="idautorizado" />
+    </Key>
+    <Property Name="idautorizado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idregistro" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="255" />
+    <Property Name="tipo_documento" Type="int" />
+    <Property Name="documento" Type="varchar" MaxLength="20" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_MOD_registro">
+    <Key>
+      <PropertyRef Name="idregistro" />
+    </Key>
+    <Property Name="idregistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ruc" Type="varchar" MaxLength="20" />
+    <Property Name="razon_social" Type="varchar" MaxLength="511" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="direccion" Type="varchar" MaxLength="511" />
+    <Property Name="ip" Type="varchar" MaxLength="20" />
+    <Property Name="version" Type="int" />
+    <Property Name="moneda_cargo" Type="varchar" MaxLength="10" />
+    <Property Name="cuenta_cargo" Type="varchar" MaxLength="20" />
+    <Property Name="entidad" Type="varchar" MaxLength="255" />
+    <Property Name="firmantes" Type="int" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+    <Property Name="codoficina" Type="varchar" MaxLength="10" />
+    <Property Name="token_fisico" Type="int" />
+    <Property Name="token_digital" Type="int" />
+    <Property Name="usuario_administrador" Type="varchar" MaxLength="20" />
+    <Property Name="dni_administrador" Type="varchar" MaxLength="20" />
+    <Property Name="nombre_administrador" Type="varchar" MaxLength="200" />
+    <Property Name="email_administrador" Type="varchar" MaxLength="200" />
+    <Property Name="telefono_administrador" Type="varchar" MaxLength="20" />
+    <Property Name="token" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_MOD_representante">
+    <Key>
+      <PropertyRef Name="idrepresentante" />
+    </Key>
+    <Property Name="idrepresentante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idregistro" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="255" />
+    <Property Name="tipo_documento" Type="int" />
+    <Property Name="documento" Type="varchar" MaxLength="20" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_MOD_token">
+    <Key>
+      <PropertyRef Name="idtoken" />
+    </Key>
+    <Property Name="idtoken" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idregistro" Type="int" />
+    <Property Name="token_usuario" Type="varchar" MaxLength="10" />
+    <Property Name="tipo" Type="int" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_registro">
+    <Key>
+      <PropertyRef Name="idregistro" />
+    </Key>
+    <Property Name="idregistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ruc" Type="varchar" MaxLength="20" />
+    <Property Name="razon_social" Type="varchar" MaxLength="511" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="direccion" Type="varchar" MaxLength="511" />
+    <Property Name="ip" Type="varchar" MaxLength="20" />
+    <Property Name="version" Type="int" />
+    <Property Name="moneda_cargo" Type="varchar" MaxLength="10" />
+    <Property Name="cuenta_cargo" Type="varchar" MaxLength="20" />
+    <Property Name="entidad" Type="varchar" MaxLength="255" />
+    <Property Name="firmantes" Type="int" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+    <Property Name="codoficina" Type="varchar" MaxLength="10" />
+    <Property Name="token_fisico" Type="int" />
+    <Property Name="token_digital" Type="int" />
+    <Property Name="usuario_administrador" Type="varchar" MaxLength="20" />
+    <Property Name="dni_administrador" Type="varchar" MaxLength="20" />
+    <Property Name="nombre_administrador" Type="varchar" MaxLength="200" />
+    <Property Name="email_administrador" Type="varchar" MaxLength="200" />
+    <Property Name="telefono_administrador" Type="varchar" MaxLength="20" />
+    <Property Name="token" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_representante">
+    <Key>
+      <PropertyRef Name="idrepresentante" />
+    </Key>
+    <Property Name="idrepresentante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idregistro" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="255" />
+    <Property Name="tipo_documento" Type="int" />
+    <Property Name="documento" Type="varchar" MaxLength="20" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="BPI_EMPRESAS_token">
+    <Key>
+      <PropertyRef Name="idtoken" />
+    </Key>
+    <Property Name="idtoken" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idregistro" Type="int" />
+    <Property Name="token" Type="int" />
+    <Property Name="tipo" Type="int" />
+    <Property Name="f_registro" Type="datetime" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <Function Name="SP_BPI_EMPRESAS_OFICINAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="REGION" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="panelModelStoreContainer">
+    <EntitySet Name="BPI_EMPRESAS_autorizados" EntityType="Self.BPI_EMPRESAS_autorizados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_dato" EntityType="Self.BPI_EMPRESAS_dato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_MOD_autorizados" EntityType="Self.BPI_EMPRESAS_MOD_autorizados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_MOD_registro" EntityType="Self.BPI_EMPRESAS_MOD_registro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_MOD_representante" EntityType="Self.BPI_EMPRESAS_MOD_representante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_MOD_token" EntityType="Self.BPI_EMPRESAS_MOD_token" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_registro" EntityType="Self.BPI_EMPRESAS_registro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_representante" EntityType="Self.BPI_EMPRESAS_representante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BPI_EMPRESAS_token" EntityType="Self.BPI_EMPRESAS_token" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

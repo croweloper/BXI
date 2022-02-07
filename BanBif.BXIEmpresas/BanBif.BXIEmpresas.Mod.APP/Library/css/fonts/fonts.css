@@ -1,0 +1,28 @@
+@font-face {
+      font-family: 'Produkt Reg';
+      src: url('produkt/Produkt-Regular-Web.eot');
+      src: url('produkt/Produkt-Regular-Web.eot?#iefix') format('embedded-opentype'),
+           url('produkt/Produkt-Regular-Web.woff2') format('woff2'),
+           url('produkt/Produkt-Regular-Web.woff') format('woff');
+      font-weight:  400;
+      font-style:   normal;
+      font-stretch: normal;
+}
+
+@font-face {
+      font-family: 'Produkt Med';
+      src: url('produkt/Produkt-Medium-Web.eot');
+      src: url('produkt/Produkt-Medium-Web.eot?#iefix') format('embedded-opentype'),
+           url('produkt/Produkt-Medium-Web.woff2') format('woff2'),
+           url('produkt/Produkt-Medium-Web.woff') format('woff');
+      font-weight:  500;
+      font-style:   normal;
+      font-stretch: normal;
+}
+
+@font-face {
+    font-family: "Balto";
+    src: url("/assets/fonts/balto/baltoweb-book.eot");
+    font-weight: 400;
+    font-style: normal;
+}
